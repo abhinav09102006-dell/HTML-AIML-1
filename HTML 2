@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title> MY FIRST WEBPAGE </title>
+        </head>
+<body>
+    <!-- <h1>WELCOME TO HTML</h1>
+    <h2>WELCOME TO HTML</h2>
+    <h3>WELCOME TO HTML</h3>
+    <h4>WELCOME TO HTML</h4>
+    <h5>WELCOME TO HTML</h5> 
+    <h6>WELCOME TO HTML</h6> -->
+
+
+ <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed totam maxime odit eum vitae ea cupiditate debitis est ullam incidunt at aperiam enim suscipit ipsa iusto, voluptatibus error repellendus perspiciatis. Laborum provident illum voluptatibus error, saepe alias et dolorum, dolor quos adipisci earum doloribus? A eligendi rerum natus porro voluptates eos, tenetur, rem labore, dicta praesentium commodi minima eveniet sequi. Sint totam tenetur provident. Ea, sequi. Iste eius in voluptatem culpa, fugiat unde vitae aliquid rerum? Totam deleniti consectetur ad. Voluptas sunt, a qui animi nihil expedita facilis impedit dignissimos odit maxime eos aliquam similique voluptates enim consectetur vitae quae!</p> -->
+    <!-- <a href="http://www.google.com">google</a> -->
+
+    </head>
+    <body>
+        
+    </body>
+    </html></h1>
+</body>
+<!-- </html> -->
+ <!-- TYPES OF ELEMENTS -->
+  <!-- Block Elements -->
+   <!-- <DIV>HELLO</DIV> -->
+    <P>HELLO</P>
+    <h1>world</h1>
+     <ul>this is earth</ul>
+<ol>this is earth</ol>
+<i>this is earth<i></i>
+<center><b>this is earth</b</center>
+    <br>this is mother earth
+    <hr>hello world
+    <div>hello world this is earth</div>
+    <br>hello earth
+<img src="c:\Users\hp\Pictures\Screenshots\Screenshot (196).png" height="300 pixels" alt="some error occured">
+<FONTSIZE="+2">TWO SIZE BIGGER</FONTSIZE>
+<FONTSIZE=+9"><BR>HELLO WORLD</BR></FONTSIZE>
+<FONTCOLOR="#0000ff">THIS TEXT HAS COLOR</FONTCOLOR>
+<strong>hello world</strong>
+<em>world</em>
+<STRIKE>hello world</STRIKE>
+<p>x <sup>3</sup></p>
+<mark>hello world</mark>
+<P>&#entity_number</P>
