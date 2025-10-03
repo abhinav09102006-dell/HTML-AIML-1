@@ -1,0 +1,335 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Table</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting the default font to Inter for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-extrabold text-gray-800 mb-6 border-b pb-2">
+            TABLE
+        </h1>
+
+        <!-- Table Container: Makes it scrollable on small screens -->
+        <div class="overflow-x-auto bg-white shadow-xl rounded-xl">
+            <table class="min-w-full divide-y divide-gray-200">
+                
+                <!-- Table Header (The required fields) -->
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider rounded-tl-xl">
+                            First Name
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Last Name
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider rounded-tr-xl">
+                            Age
+                        </th>
+                    </tr>
+                </thead>
+
+                <!-- Table Body (Mock Data) -->
+                <tbody class="bg-white divide-y divide-gray-100">
+                    
+                    <!-- Row 1 -->
+                    <tr class="hover:bg-indigo-50/30 transition duration-150 ease-in-out">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Alex
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            Johnson
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            28
+                        </td>
+                    </tr>
+                    
+                    <!-- Row 2 -->
+                    <tr class="hover:bg-indigo-50/30 transition duration-150 ease-in-out">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Maria
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            Garcia
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            34
+                        </td>
+                    </tr>
+                    
+                    <!-- Row 3 -->
+                    <tr class="hover:bg-indigo-50/30 transition duration-150 ease-in-out">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Thomas
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            Lee
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                            45
+                        </td>
+                    </tr>
+                    
+                    <!-- You can copy and paste the <tr>...</tr> section to add more rows -->
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES Engineering College Time Table (CSE-AIM)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'abes-blue': '#1a2e4a',
+                        'abes-light': '#f0f4f8',
+                        'blue-light': '#e0f2fe',
+                        'yellow-accent': '#fef3c7',
+                        'green-accent': '#dcfce7',
+                        'orange-accent': '#fee2e2',
+                        'purple-accent': '#ede9fe',
+                        'cyan-accent': '#e0f7fa',
+                        'rose-accent': '#ffe4e6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles to handle borders and merged cells aesthetics */
+        .tt-table {
+            border-collapse: collapse;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .tt-cell {
+            border: 1px solid #d1d5db; /* Gray-300 */
+            padding: 8px 4px; /* Adjust padding for mobile/desktop */
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0.75rem; /* text-xs */
+            line-height: 1.1;
+            font-weight: 500; /* Medium */
+        }
+        .tt-header-cell {
+            padding: 10px 4px;
+            font-weight: 600;
+            background-color: #e5e7eb; /* Gray-200 */
+            color: #1f2937; /* Gray-800 */
+        }
+        /* Style for the day column */
+        .day-cell {
+            background-color: #f3f4f6; /* Gray-100 */
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        /* Mobile optimization: make cells stack vertically with slightly larger text */
+        @media (max-width: 768px) {
+            .tt-cell {
+                padding: 6px 2px;
+                font-size: 0.65rem; /* Even smaller for very small screens */
+            }
+            .tt-header-cell {
+                padding: 8px 2px;
+            }
+        }
+        /* Custom colors based on the image's legend (approximated Tailwind colors) */
+        .color-blue-dark { background-color: #3b82f6; color: white; } /* Blue-500 */
+        .color-yellow { background-color: #facc15; } /* Yellow-400 */
+        .color-orange { background-color: #f87171; color: white; } /* Red-400 */
+        .color-purple { background-color: #a78bfa; color: white; } /* Violet-400 */
+        .color-green-light { background-color: #a7f3d0; } /* Teal-200 */
+        .color-cyan { background-color: #22d3ee; color: white; } /* Cyan-400 */
+        .color-green-dark { background-color: #10b981; color: white; } /* Emerald-500 */
+        .color-rose { background-color: #f43f5e; color: white; } /* Rose-500 */
+    </style>
+</head>
+<body class="bg-gray-50 font-sans p-2 sm:p-6 lg:p-10">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="p-4 sm:p-6 bg-white border-b border-gray-200">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <div class="flex items-center space-x-3 mb-2 sm:mb-0">
+                    <!-- Placeholder for ABES logo - Use SVG or simple text -->
+                    <div class="text-abes-blue text-2xl font-extrabold">ABES</div>
+                    <div class="text-lg sm:text-2xl font-semibold text-gray-800">
+                        ABES Engineering College, Ghaziabad<br>
+                        <span class="text-base font-medium text-gray-600">Class Time Table</span>
+                    </div>
+                </div>
+                <div class="text-right text-sm sm:text-base">
+                    <p class="font-bold text-abes-blue">TM-07</p>
+                    <p>w.e.f: 15.09.2025</p>
+                    <p>Session 2025-26, Odd Semester</p>
+                </div>
+            </div>
+            <div class="mt-4 text-sm sm:text-base">
+                <p class="font-bold">Course: <span class="font-normal">B.Tech</span></p>
+                <p class="font-bold">Semester / Section: <span class="font-normal">I/CSE-AIM</span></p>
+                <p class="font-bold">Department: <span class="font-normal">Applied Science and Humanities</span></p>
+                <p class="font-bold">Class Room No.: <span class="font-normal">RJ-101, RJ-106, RJ-107, RJ-201, RJ-202</span></p>
+            </div>
+        </header>
+
+        <!-- Time Table Body -->
+        <div class="p-2 sm:p-4 overflow-x-auto">
+            <table class="tt-table w-full min-w-[768px]">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-800">
+                        <th class="tt-header-cell w-1/12" rowspan="2">Time<br>Day</th>
+                        <th class="tt-header-cell w-1/12">I</th>
+                        <th class="tt-header-cell w-1/12">II</th>
+                        <th class="tt-header-cell w-1/12">III</th>
+                        <th class="tt-header-cell w-1/12">IV</th>
+                        <th class="tt-header-cell w-1/12" rowspan="2">V<br><span class="text-xs font-normal">12:20-1:10</span></th>
+                        <th class="tt-header-cell w-1/12">VI</th>
+                        <th class="tt-header-cell w-1/12">VII</th>
+                        <th class="tt-header-cell w-1/12">VIII</th>
+                        <th class="tt-header-cell w-1/12">IX</th>
+                    </tr>
+                    <tr class="bg-gray-200 text-gray-800">
+                        <th class="tt-header-cell"><span class="text-xs font-normal">08:50-09:40</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">09:40-10:30</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">10:40-11:30</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">11:30-12:20</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">01:10-02:00</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">02:00-02:50</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">02:50-03:40</span></th>
+                        <th class="tt-header-cell"><span class="text-xs font-normal">03:40-04:30</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: Monday -->
+                    <tr>
+                        <td class="tt-cell day-cell">Monday</td>
+                        <td class="tt-cell color-purple">25HU101<br>(SGI)<br>RJ-107</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-107</td>
+                        <td class="tt-cell color-green-light">25HU102<br>(NS)<br>RJ-107</td>
+                        <td class="tt-cell color-cyan">25VA151<br>(JKC)<br>RJ-107</td>
+                        <td class="tt-cell bg-gray-300 font-bold" rowspan="5">LUNCH</td>
+                        <td class="tt-cell color-blue-dark" colspan="2">25EC101<br>(ATS,KB)<br>Bhabha Block I Floor (BH-115)</td>
+                        <td class="tt-cell color-green-dark">25ME101<br>(SCN)<br>RJ-101</td>
+                        <td class="tt-cell bg-white text-left">
+                            <div class="border-b border-gray-200 pb-1 mb-1">
+                                <span class="text-xs font-bold text-red-600">25EC101 G1(T)</span><br>
+                                <span class="text-xs font-medium">(ATS) TR-02</span>
+                            </div>
+                            <span class="text-xs font-bold text-blue-600">25AS102 G2 (T)</span><br>
+                            <span class="text-xs font-medium">(DSX) TR-03</span>
+                        </td>
+                    </tr>
+                    <!-- Row 2: Tuesday -->
+                    <tr>
+                        <td class="tt-cell day-cell">Tuesday</td>
+                        <td class="tt-cell color-blue-dark">25EC101<br>(ATS)<br>RJ-202</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-202</td>
+                        <td class="tt-cell color-purple" colspan="2">25HU151<br>(SGI,KG)<br>KC Block V Floor (KC-510)</td>
+                        <td class="tt-cell color-green-dark">25CS101<br>(SSP)<br>RJ-107</td>
+                        <td class="tt-cell color-green-dark">25CS101<br>(SSP)<br>RJ-107</td>
+                        <td class="tt-cell color-yellow">25ME101<br>(SCN)<br>RJ-301</td>
+                        <td class="tt-cell bg-white text-left">
+                            <div class="border-b border-gray-200 pb-1 mb-1">
+                                <span class="text-xs font-bold text-blue-600">25AS102 G1(T)</span><br>
+                                <span class="text-xs font-medium">(DSX) RJ-107</span>
+                            </div>
+                            <span class="text-xs font-bold text-red-600">25ME101 G2 (T)</span><br>
+                            <span class="text-xs font-medium">(SCN) RJ-301</span>
+                        </td>
+                    </tr>
+                    <!-- Row 3: Wednesday -->
+                    <tr>
+                        <td class="tt-cell day-cell">Wednesday</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-201</td>
+                        <td class="tt-cell color-green-light">25HU102<br>(NS)<br>RJ-201</td>
+                        <td class="tt-cell color-yellow" colspan="2">25ME151<br>(SCN, DNJ)<br>Vishwakarma Block Ground Floor</td>
+                        <td class="tt-cell color-blue-dark">25EC101<br>(ATS)<br>RJ-304</td>
+                        <td class="tt-cell color-green-dark">25CS101<br>(SSP)<br>RJ-304</td>
+                        <td class="tt-cell color-green-dark">25CS101<br>(SSP)<br>RJ-304</td>
+                        <td class="tt-cell color-rose">25CS151<br>(SSP)<br>Computer Lab-28</td>
+                    </tr>
+                    <!-- Row 4: Thursday -->
+                    <tr>
+                        <td class="tt-cell day-cell">Thursday</td>
+                        <td class="tt-cell color-green-dark">25ME101<br>(SCN)<br>RJ-202</td>
+                        <td class="tt-cell color-blue-dark">25EC101<br>(ATS)<br>RJ-202</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-202</td>
+                        <td class="tt-cell color-purple">Mentor-Mentee<br>(SCN,SGI)<br>RJ-202</td>
+                        <td class="tt-cell color-rose" colspan="2">25CS151<br>(SSP)<br>Computer Lab-28<br>Aryabhatta Block Ground Floor</td>
+                        <td class="tt-cell color-purple">25HU101<br>(SGI)<br>RJ-101</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-101</td>
+                    </tr>
+                    <!-- Row 5: Friday -->
+                    <tr>
+                        <td class="tt-cell day-cell">Friday</td>
+                        <td class="tt-cell color-cyan" colspan="2">25VA151<br>(JKC)<br>Computer Lab-28<br>Aryabhatta Block Ground Floor</td>
+                        <td class="tt-cell color-green-dark">25ME101<br>(SCN)<br>RJ-202</td>
+                        <td class="tt-cell color-orange">25AS102<br>(DSX)<br>RJ-202</td>
+                        <td class="tt-cell color-green-light">25HU102<br>(NS)<br>RJ-201</td>
+                        <td class="tt-cell color-blue-dark">25EC101<br>(ATS)<br>RJ-201</td>
+                        <td class="tt-cell color-purple">25HU101<br>(SGI)<br>RJ-201</td>
+                        <td class="tt-cell bg-white text-left">
+                            <div class="border-b border-gray-200 pb-1 mb-1">
+                                <span class="text-xs font-bold text-red-600">25ME101 G1(T)</span><br>
+                                <span class="text-xs font-medium">(SCN) TR-02</span>
+                            </div>
+                            <span class="text-xs font-bold text-blue-600">25EC101 G2 (T)</span><br>
+                            <span class="text-xs font-medium">(ATS) TR-03</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Footer/Legend Section (optional but helpful) -->
+        <footer class="p-4 sm:p-6 bg-gray-50 border-t border-gray-200 text-xs text-gray-600">
+            <p class="font-bold mb-2 text-sm text-gray-700">Legend/Key:</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                <p>25ME101: Basics of Mechanical & Automation Engg. (SCN)</p>
+                <p>25EC101: Basics of Electronics Engg. (ATS)</p>
+                <p>25AS102: Fundamentals of Linear Algebra and Statistics (DSX)</p>
+                <p>25CS101: Data Structure (SSP)</p>
+                <p>25HU101: Soft Skills (SGI)</p>
+                <p>25HU102: Design Thinking (NS)</p>
+                <p>25VA151: Web Designing Workshop I (JKC)</p>
+                <p>25EC151: Basic Electronics Engg. Lab (ATS, KB)</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
