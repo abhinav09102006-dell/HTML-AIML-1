@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Curriculum</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set default font to Inter and ensure lists have proper spacing */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Custom styling for list indentation and text alignment */
+        .list-container ol, .list-container ul, .list-container dl {
+            padding-left: 1.5rem; /* Standard indentation */
+        }
+        .description-term {
+            font-weight: 600; /* Bold for definition term */
+            margin-top: 0.5rem;
+            color: #1f2937;
+        }
+        .description-data {
+            margin-left: 1.5rem; /* Indentation for definition data */
+            color: #4b5563;
+        }
+        .special-text {
+            font-style: italic;
+            color: #3b82f6; /* A nice blue color for emphasis */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 flex justify-center">
+
+    <div class="max-w-4xl w-full bg-white shadow-xl rounded-xl p-6 md:p-10 border border-gray-200">
+        
+        <!-- Introduction Section -->
+        <div class="mb-8 pb-4 border-b border-gray-200">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">Introduction</h1>
+            <p class="text-gray-600">
+                Welcome to the Course Curriculum. This page demonstrates the use of 
+                <span class="special-text">HTML formatting</span>, 
+                <span class="special-text">lists</span>, and special characters such as 
+                <span class="special-text">&lt;</span>, 
+                <span class="special-text">&gt;</span>.
+            </p>
+        </div>
+
+        <div class="list-container">
+            
+            <!-- 1. Ordered List -->
+            <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">Semester 1 Subjects (Ordered List)</h2>
+            <ol class="list-decimal text-gray-700 space-y-1">
+                <li>Mathematics I</li>
+                <li>Computer Fundamentals</li>
+                <li>Programming in C</li>
+                <li>Electronics Basics</li>
+            </ol>
+
+            <!-- 2. Unordered List -->
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">Programming Languages (Unordered List)</h2>
+            <ul class="list-disc text-gray-700 space-y-1">
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <!-- 3. Description List -->
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">Course Description (Description List)</h2>
+            <dl class="text-sm">
+                <!-- C Programming -->
+                <dt class="description-term">C Programming</dt>
+                <dd class="description-data">Learn basics of C language including loops, arrays, and functions.</dd>
+                
+                <!-- Java -->
+                <dt class="description-term">Java</dt>
+                <dd class="description-data">Introduction to Object-Oriented Programming concepts.</dd>
+            </dl>
+
+            <!-- 4. Nested List -->
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">Course Modules (Nested List)</h2>
+            <ol class="list-decimal text-gray-700 space-y-2">
+                <li>
+                    Module 1: Basics
+                    <!-- Nested Unordered List -->
+                    <ul class="list-disc text-sm mt-1 mb-1 space-y-0.5">
+                        <li>Introduction</li>
+                        <li>History of Computers</li>
+                    </ul>
+                </li>
+                <li>
+                    Module 2: Programming
+                    <!-- Nested Unordered List -->
+                    <ul class="list-disc text-sm mt-1 mb-1 space-y-0.5">
+                        <li>Variables & Data Types</li>
+                        <li>Control Statements</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <!-- 5. Mixed List -->
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">Project Work (Mixed List)</h2>
+            <ul class="list-disc text-gray-700 space-y-2">
+                <li>
+                    Web Development
+                    <!-- Nested Ordered List -->
+                    <ol class="list-decimal text-sm mt-1 space-y-0.5 ml-4">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </li>
+                <li>
+                    Database
+                    <!-- Nested Ordered List (with alphabetical markers) -->
+                    <ol class="list-[upper-alpha] text-sm mt-1 space-y-0.5 ml-4">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

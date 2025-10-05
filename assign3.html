@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Daily News</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set a modern font and ensure the container is centered */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Custom styling for the logo block to ensure exact appearance */
+        .bbc-logo-container {
+            width: 100%; /* Full width within its parent container */
+            max-width: 400px; /* Sizing based on the user's image */
+            margin-top: 1.5rem;
+            border-radius: 4px;
+            /* Ensure text is white and the background is the signature BBC red */
+            background-color: #B80000; /* Custom BBC Red */
+            color: #ffffff;
+            padding: 1.5rem; /* Internal padding */
+        }
+
+        /* Specific styles for the boxed letters */
+        .bbc-box {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 800; /* font-extrabold */
+            border: 2px solid white;
+            padding: 0.25rem 0.5rem; /* px-2 py-1 */
+            line-height: 1;
+            display: inline-block;
+        }
+
+        /* Specific styles for the 'WORLD NEWS' text */
+        .world-news-text {
+            font-size: 3rem; /* Large text */
+            line-height: 0.9; /* Tight line spacing */
+            font-weight: 900; /* Even bolder */
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        /* Responsive adjustments for the logo text */
+        @media (min-width: 768px) {
+            .world-news-text {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header class="text-center border-b pb-4 mb-6">
+            <h1 class="text-4xl font-extrabold text-gray-900 mt-4 mb-2">Global Daily News</h1>
+            <p class="text-lg text-gray-600 italic">Your Trusted Source for Latest Updates</p>
+        </header>
+
+        <!-- Navigation Links -->
+        <nav class="text-center mb-8 border-b border-gray-300 pb-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm md:text-base px-2 underline">World</a>
+            <span class="text-gray-400">|</span>
+            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm md:text-base px-2 underline">Sports</a>
+            <span class="text-gray-400">|</span>
+            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm md:text-base px-2 underline">Entertainment</a>
+            <span class="text-gray-400">|</span>
+            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm md:text-base px-2 underline">Podcast</a>
+            <span class="text-gray-400">|</span>
+            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm md:text-base px-2 underline">Contact</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main class="mt-4">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">World News</h2>
+            <p class="text-gray-700 mb-4">
+                Today's top headline: Global leaders meet to discuss climate change initiatives.
+            </p>
+
+            <!-- Image/Logo Area: Replicating the BBC logo exactly using HTML and CSS -->
+            <div class="bbc-logo-container">
+                <!-- Top Row: B B C with white boxes -->
+                <div class="flex space-x-2 mb-2">
+                    <span class="bbc-box">B</span>
+                    <span class="bbc-box">B</span>
+                    <span class="bbc-box">C</span>
+                </div>
+                
+                <!-- Bottom Row: WORLD NEWS, large and stacked -->
+                <div class="world-news-text">
+                    WORLD<br>NEWS
+                </div>
+            </div>
+            
+        </main>
+
+    </div>
+</body>
+</html>
