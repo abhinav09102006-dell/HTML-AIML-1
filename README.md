@@ -1,174 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+# 🛡️ Dr. Strange Shields
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Timed Cards Opening</title>
-    <link rel="stylesheet" href="./style.css">
+**Real-time gesture-controlled magical shields using computer vision and machine learning**
 
-  </head>
-    
-  <body>
-  <body>
-    <div class="indicator"></div>
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.12-green.svg)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10-orange.svg)
 
-    <nav>
-      <div>
-        <div class="svg-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-            />
-          </svg>
-        </div>
-        <div>Globe Express</div>
-      </div>
-      <div>
-        <div class="active">Home</div>
-        <div>Holidays</div>
-        <div>Destinations</div>
-        <div>Flights</div>
-        <div>Offers</div>
-        <div>Contact</div>
-        <div class="svg-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-            />
-          </svg>
-        </div>
-        <div class="svg-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </nav>
+## ✨ Features
 
-    <div id="demo"></div>
+- 🖐️ **Real-time hand tracking** with MediaPipe (21 landmarks per hand)
+- 🤖 **Smart gesture recognition** using SVM classifier
+- ⚡ **Sequential activation** - shields activate only in correct gesture order
+- 🎬 **Dynamic effects** - shield overlays scale with hand position
+- 📺 **Flexible output** - OpenCV window, virtual camera, or both
 
-    <div class="details" id="details-even">
-      <div class="place-box">
-        <div class="text">Switzerland Alps</div>
-      </div>
-      <div class="title-box-1"><div class="title-1">SAINT</div></div>
-      <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
-      <div class="desc">
-        Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.
-      </div>
-      <div class="cta">
-        <button class="bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-        <button class="discover">Discover Location</button>
-      </div>
-    </div>
+## 🚀 Quick Start
 
-    <div class="details" id="details-odd">
-      <div class="place-box">
-        <div class="text">Switzerland Alps</div>
-      </div>
-      <div class="title-box-1"><div class="title-1">SAINT </div></div>
-      <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
-      <div class="desc">
-        Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.
-      </div>
-      <div class="cta">
-        <button class="bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-        <button class="discover">Discover Location</button>
-      </div>
-    </div>
+### Installation
 
-    <div class="pagination" id="pagination">
-      <div class="arrow arrow-left">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div class="arrow arrow-right">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-          />
-        </svg>
-      </div>
-      <div class="progress-sub-container" >
-        <div class="progress-sub-background" >
-            <div class="progress-sub-foreground" ></div>
-        </div>
-    </div>
-    <div class="slide-numbers" id="slide-numbers"></div>
-    </div>
+```bash
+# Install dependencies
+pip install -r requirements.txt
+```
 
-    <div class="cover" ></div>
-   
+### Run
 
-   
-  </body>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script><script  src="./script.js"></script>
+```bash
+# Run with OpenCV window (recommended)
+python shield.py --output window
 
-  </body>
-  
-</html>
+# Run with virtual camera output
+python shield.py --output virtual
+
+# Run with both outputs
+python shield.py --output both
+```
+
+## 🎮 How to Use
+
+### Gesture Sequence
+
+1. **Activate Shields**: Perform gestures KEY_1 → KEY_2 → KEY_3 in sequence (within 2 seconds each)
+2. **Deactivate Shields**: Perform gesture KEY_4
+
+### Controls
+
+- **'q'** - Quit application
+- **Ctrl+C** - Force stop
+
+### Command-line Options
+
+```bash
+python shield.py [OPTIONS]
+
+  -m, --model FILE          Path to ML model (default: models/model_svm.sav)
+  -t, --threshold FLOAT     Prediction threshold 0-1 (default: 0.9)
+  -dc, --det_conf FLOAT     Detection confidence 0-1 (default: 0.5)
+  -tc, --trk_conf FLOAT     Tracking confidence 0-1 (default: 0.5)
+  -c, --camera_id INT       Camera ID (default: 0)
+  -s, --shield FILE         Shield video path (default: effects/shield.mp4)
+  -o, --output MODE         Output: window|virtual|both (default: both)
+```
+
+## 📁 Project Structure
+
+```
+Dr.-Strange-main/
+├── shield.py              # Main application
+├── utils.py               # Helper functions
+├── requirements.txt       # Dependencies
+├── README.md             # This file
+├── LICENSE               # MIT License
+├── models/
+│   ├── model_svm.sav     # Default trained model
+│   └── model_smv_010323.sav  # Alternative model
+└── effects/
+    ├── shield.mp4        # Default shield effect
+    ├── shield_effect.mp4 # Alternative shield
+    └── rasengan_shuriken.mp4  # Alternative effect
+```
+
+## 🔧 Requirements
+
+- **Python**: 3.8 or higher
+- **Webcam**: USB or built-in camera
+- **OS**: Windows, Linux, or macOS
+
+## 💡 Tips
+
+- ✅ Keep both hands visible and well-lit
+- ✅ Use plain backgrounds for better detection
+- ✅ Adjust threshold if gestures are misread: `--threshold 0.7`
+- ✅ Keep hands 30-60cm from camera
+
+## 🐛 Troubleshooting
+
+**Camera not detected?**
+
+- Check camera permissions
+- Try different camera ID: `--camera 1`
+
+**Low FPS?**
+
+- Close other applications using camera
+- Ensure good lighting
+
+**Gestures not recognized?**
+
+- Ensure both hands are visible
+- Lower threshold: `--threshold 0.7`
+
+## 📝 License
+
+MIT License - see [LICENSE](LICENSE) file for details
+
+## 🙏 Credits
+
+Made with Python 🐍, hand gestures 🤲, and a touch of magic ✨
+
+---
+
+**Enjoy casting magical shields!** 🛡️✨

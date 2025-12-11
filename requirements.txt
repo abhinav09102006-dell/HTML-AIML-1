@@ -1,0 +1,7 @@
+# Core dependencies for Dr. Strange Shields
+opencv-contrib-python
+mediapipe
+numpy<2.0.0
+scikit-learn
+pyvirtualcam
+pandas
