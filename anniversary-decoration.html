@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Multi Image Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Bdayfy | Anniversary Decoration</title>
+  </head>
+  <body>
+       <header class="desktop-header">
+        <div class="top-menu">
+            <div class="container-fluid px-5">
+                <div class="col-md-12 text-end">
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Currency - <strong>INR</strong></a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top-header">
+            <div class="container-fluid px-5">
+                <div class="top-header-box row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                            <span class="d-block desktop-only text-blue d-lg-none me-2 ms-2">
+                                <a href="login.html" class="cart-icon me-2">
+                                    <i class="fa-shopping-cart fas"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="top-search sticky-search" id="myHeader">
+                            <div class="toggl">
+                                <i class="fa-bars fas"></i>
+                            </div>
+                            <input type="text" class="form-control"
+                                placeholder="Search 5000+ flowers, cakes, gifts etc" name="" />
+                            <i class="fa-srch-rit fa-search fas"></i>
+                            <!-- Menu -->
+                            <ul class="nav-menu">
+                                <li class="mobile-nav"><img src="images/logo.png" alt="Logo" class="img-fluid" />
+                                    <a href="login.html" class="user-account"><i class="fa-sign-in-alt fas"></i>
+                                        Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-page.html">
+                                        Flowers
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cake-page.html">
+                                        Cakes
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        combos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Gifts
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Birthday Dress
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Birthday Decoration
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Anniversary Decoration
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Plan Your Event
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn-call nav-link"
+                                        href="https://www.dronainfotech.in/bdayfy/mobile-forms.html">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <div class="mt-4 container">
+                                    <div class="contact-info row">
+                                        <!-- Address -->
+                                        <div class="mb-3 form-text-2 col-12">
+                                            <p calss="form-text-2"><strong>Address: </strong>&nbsp; B-23 Sector 63 Noida
+                                                Gautam Buddha Nagar UP 201301 IN</p>
+                                        </div>
+                                        <!-- Email -->
+                                        <div class="mb-3 col-12">
+                                            <p calss="form-text-2"><strong>Email: </strong>&nbsp; <a
+                                                    href="mailto:info@bdayfy.com">info@bdayfy.com</a></p>
+                                        </div>
+                                        <!-- Phone -->
+                                        <div class="col-12">
+                                            <p calss="form-text-2"><strong>Phone: </strong>&nbsp; <a
+                                                    href="tel:918882412025">+91 8882412025</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="delivery-box" data-bs-toggle="modal" data-bs-target="#select_locatin">
+                            <div class="delivery-country">
+                                <img src="images/india-icon.png" class="flage" alt="menu" />
+                                <a href="#" class="country-input ms-1">IND</a>
+                            </div>
+                            <div class="delivery-in">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <a href="#">Delivery In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 login-remove text-end" style="positin: relative;">
+                        <div class="top-links position-relative">
+                            <span class="desktop-only text-blue"></span>
+                            <button class="user-h-button me-3">
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                                <img src="images/user-icon-grey.png" class="user-icon-grey" alt="user-icon">
+                                <div class="user_profile_popup">
+                                    <div class="popup_user">
+                                        <h4>Welcome</h4>
+                                        <p>To access account and manage orders</p>
+                                        <a href="login.html" class="log_in_signup">Signup/Login</a>
+                                        <ul>
+                                            <li><a href="user-info.html">My Profile</a></li>
+                                            <li><a href="orders.html">My Orders</a></li>
+                                            <li><a href="saved-address.html">My Address Book</a></li>
+                                            <li><a href="wallet.html">My Wallet</a></li>
+                                            <li><a href="reminder.html">My Reminders</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </button>
+                            <span class="desktop-only text-blue me-4">
+                                <a href="#" class="desktop-cart-icons">
+                                    <img src="images/without-heart.png" class="user-icon-grey" alt="user-icon">
+                                    <span>0</span>
+                                </a>
+                            </span>
+                            <span class="desktop-only text-blue me-2">
+                                <a href="cartpage.html" class="desktop-cart-icons">
+                                    <img src="images/cart.png" class="user-icon-grey" alt="user-icon">
+                                    <span>0</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="d-none web-cart">
+                            <div class="cart-header-2">
+                                <h5>My Cart(2)</h5>
+                                <button class="cart_close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="cart-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="cart-list-box-s">
+                                                <div class="item-list-cart">
+                                                    <div class="product-img">
+                                                        <img src="images/cake-1.jpg" alt="">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="product-detail">
+                                                        <h4>Festive Season Surprise Hamper</h4>
+                                                        <p>1799X1</p>
+                                                    </div>
+                                                    <button><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Deliver To</h6>
+                                                    <p><i class="fa-location-dot fa-solid"></i> 122001, Gurgaon, Haryana
+                                                    </p>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Delivery Date <a href="#">Change</a></h6>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="left-section">
+                                                                <h4>14</h4>
+                                                                <p>NOV<br />THU</p>
+                                                            </div>
+                                                            <div class="right-section">
+                                                                <p>Express Delivery : ₹ 49</p>
+                                                                <span>15:00 - 18:00 Hrs</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="cart-list-box-s">
+                                                <div class="item-list-cart">
+                                                    <div class="product-img">
+                                                        <img src="images/cake-1.jpg" alt="">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="product-detail">
+                                                        <h4>Festive Season Surprise Hamper</h4>
+                                                        <p>1799X1</p>
+                                                    </div>
+                                                    <button><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Deliver To</h6>
+                                                    <p><i class="fa-location-dot fa-solid"></i> 122001, Gurgaon, Haryana
+                                                    </p>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Delivery Date <a href="#">Change</a></h6>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="left-section">
+                                                                <h4>14</h4>
+                                                                <p>NOV<br />THU</p>
+                                                            </div>
+                                                            <div class="right-section">
+                                                                <p>Express Delivery : ₹ 49</p>
+                                                                <span>15:00 - 18:00 Hrs</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="total-add-card">
+                                <ul>
+                                    <li>
+                                        <p>2 Base Item</p>
+                                        <span>₹ 3300</span>
+                                    </li>
+                                    <li>
+                                        <p>Shopping</p>
+                                        <span>₹ 3300</span>
+                                    </li>
+                                    <li>
+                                        <p>0 Add ons</p>
+                                        <span>0</span>
+                                    </li>
+                                    <li>
+                                        <p>Donation</p>
+                                        <span>0</span>
+                                    </li>
+                                </ul>
+                                <h5>Total : <strong>₹6498</strong></h5>
+                                <a href="#">proceed to checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-desktop">
+              <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown megamenu-li dmenu">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cakes
+                      </a>
+                      <div class="dropdown-menu megamenu sm-menu border-top col-3c" aria-labelledby="navbarDropdown">
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>Cakes By Type</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Eggless Cakes</a></li>
+                                    <li><a href="#">Midnight Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Photo Cakes</a></li>
+                                    <li><a href="#">Heart Shape Cakes</a></li>
+                                    <li><a href="#">Designer Cakes</a></li>
+                                    <li><a href="#">Fondant Cakes</a></li>
+                                    <li><a href="#">Dry Cakes</a></li>
+                                    <li><a href="#">CupCakes</a></li>
+                                    <li><a href="#">Pastry</a></li>
+                                    <li><a href="#">Jar Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cakes By Flavour</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Chocolate Cakes</a></li>
+                                    <li><a href="#">Truffle Cakes</a></li>
+                                    <li><a href="#">Black Forest Cakes</a></li>
+                                    <li><a href="#">Rasmalai Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Butterscotch Cakes</a></li>
+                                    <li><a href="#">Red Velvet Cakes</a></li>
+                                    <li><a href="#">Vanilla Cakes</a></li>
+                                    <li><a href="#">Pineapple Cakes</a></li>
+                                    <li><a href="#">Fruit Cakes</a></li>
+                                    <li><a href="#">Coffee Cakes</a></li>
+                                    <li><a href="#">Kitkat Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cakes By Theme</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Kids Cakes</a></li>
+                                    <li><a href="#">Unicorn Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Half Cakes</a></li>
+                                    <li><a href="#">Barbie Doll Cakes</a></li>
+                                    <li><a href="#">Tier Cakes</a></li>
+                                    <li><a href="#">Cartoon Cakes</a></li>
+                                    <li><a href="#">Spiderman Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cake By Occasion</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Birthday Cakes</a></li>
+                                    <li><a href="#">Anniversary Cakes</a></li>
+                                    <li><a href="#">First Birthday Cakes</a></li>
+                                    <li><a href="#">First Anniversary Cakes</a></li>
+                                    <li><a href="#">25th Anniversary Cakes</a></li>
+                                </ul>
+                                <hr>
+                                <label>Cake Combos</label>
+                                <ul>
+                                    <li><a href="#">Cake Combos</a></li>
+                                    <li><a href="#">Cakes And Flowers</a></li>
+                                    <li><a href="#">Cakes and Chocolates</a></li>
+                                    <li><a href="#">Cakes and Teddies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 border-left">
+                                <label class="text-pink">Top Trending Links</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Pinata Cakes</a></li>
+                                    <li><a href="#">Pull Me Up Cakes</a></li>
+                                    <li><a href="#">Bento Cake</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><strong>All Cakes</strong></a></li>
+                                    <li><a href="#"><strong>Best Seller Cakes</strong></a></li>
+                                </ul>                            
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <a href="#"><img src="images/new-arrivals-cake.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="images/premium-cakes.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li dmenu">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Flowers
+                      </a>
+                      <div class="dropdown-menu megamenu sm-menu border-top col-3c" aria-labelledby="navbarDropdown">
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>By Type</label>
+                                <ul>
+                                    <li><a href="#">All Flowers & Bouquets</a></li>
+                                    <li class="yellow-strip"><a href="#">Roses</a></li>
+                                    <li><a href="#">Orchids</a></li>
+                                    <li><a href="#">Lilies</a></li>
+                                    <li><a href="#">Gerberas</a></li>
+                                    <li><a href="#">Carnations</a></li>
+                                    <li class="yellow-strip"><a href="#">Assorted Flowers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>By Occasion</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Birthday</a></li>
+                                    <li class="yellow-strip"><a href="#">Anniversary</a></li>
+                                    <li><a href="#">I am Sorry</a></li>
+                                    <li class="yellow-strip"><a href="#">Love & Affection</a></li>
+                                    <li><a href="#">Wedding</a></li>
+                                    <li class="yellow-strip"><a href="#">Congratulation</a></li>
+                                    <li><a href="#">Thank You</a></li>
+                                    <li><a href="#">Sympathy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>By Color</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Unicorn Cakes</a></li>
+                                    <li><a href="#">Red Flowers</a></li>
+                                    <li><a href="#">Pink Flowers</a></li>
+                                    <li><a href="#">Yellow Flowers</a></li>
+                                    <li><a href="#">White Flowers</a></li>
+                                    <li><a href="#">Purple Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Mixed Flowers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Flower By Collection</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Premium Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Basket Arrangements</a></li>
+                                    <li><a href="#">Exotic Flowers</a></li>
+                                    <li><a href="#">Flower Boxes</a></li>
+                                </ul>
+                                <hr>
+                                <label>Flower Combos</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Flowers And Cake</a></li>
+                                    <li><a href="#">Flowers and Chocolates</a></li>
+                                    <li><a href="#">Flowers and Teddies</a></li>
+                                    <li><a href="#">Flower Combos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 border-left">
+                                <label class="text-pink">Top Trending Links</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Roses</a></li>
+                                    <li><a href="#">Birthday Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Anniversary Flowers</a></li>
+                                    <li><a href="#">Flower Combos</a></li>
+                                    <li><a href="#">Mixed Flowers</a></li>
+                                </ul>                          
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <a href="#"><img src="images/best-seller-flowers.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="images/premium-flowers-image.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Combos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Flower & Cake</a></li>
+                        <li><a class="dropdown-item" href="#">Flower & Chocolates</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gift.html">Gifts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="birthday-dress.html">Birthday Dress</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Birthday Decoration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Anniversary Decoration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="plan-your-event.html">Plan Your Event</a>
+                    </li>
+                    <li class="nav-item anim-link">
+                      <a class="nav-link py-0" href="#">
+                          <img src="images/delivery-anim.gif" class="delivery-ani" alt="delivery-anim">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+    </header>
+  <header class="mobile-header">
+    <div class="top-header-m">
+      <div class="left-section">
+        <button class="bar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="middle-box">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+      </div>
+      <div class="right-section">
+        <a href="javascript:void(0)" class="search_icon_mobile">
+          <span><i class="fa-magnifying-glass fa-solid"></i></span>
+        </a>
+        <a href="#" class="cart-icon">
+          <i class="fa-heart fa-solid"></i>
+          <span>0</span>
+        </a>
+        <a href="cartpage.html" class="cart-icon me-2">
+          <i class="fa-shopping-cart fas"></i>
+          <span>0</span>
+        </a>
+        <!-- <button class="three-dot">
+                <i class="fa-ellipsis-vertical fa-solid"></i>
+            </button> -->
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-card">
+        <div class="mobile-menu-head">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="images/cake/user.png" alt="">
+            </div>
+            <h5>Hi Guest</h5>
+          </div>
+          <a href="login.html">Login</a>
+          <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="product-page.html">
+              Flowers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cake-page.html">
+              Cakes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="combos.html">
+              combos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gift.html">
+              Gifts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="birthday-dress.html">
+              Birthday Dress
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-event.html">
+              Birthday Decoration
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-event.html">
+              Anniversary Decoration
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-event.html">
+              Plan Your Event
+            </a>
+          </li>
+          <li class="divider"></li>
+          <!-- <h4 class="menu-title-1">ENQUIRIES</h4> -->
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="user-info.html">
+              My Account
+            </a>
+          </li>
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="orders.html">
+              My Order
+            </a>
+          </li>
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="contact-us.html">
+              Help Center
+            </a>
+          </li>
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="wishlist.html">
+              Wishlist
+            </a>
+          </li>
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="#">
+              Feedback
+            </a>
+          </li>
+          <li class="nav_item_link nav-item">
+            <a class="nav-link" href="contact-us.html">
+              Contact Us
+            </a>
+          </li>
+          <!-- <li class="divider"></li> -->
+        </ul>
+        <div class="dowload-platform">
+          <a href="#">
+            <img src="images/play_store.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/app_store.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="search-modal-right">
+      <button class="close_btn_search"><i class="fa-solid fa-xmark"></i></button>
+      <form action="">
+        <input type="text" placeholder="Search by category">
+        <button class="search">Search</button>
+      </form>
+      <ul>
+        <li>Flowers</li>
+        <li>Cakes</li>
+        <li>Combos</li>
+        <li>Gifts</li>
+        <li>Birthday Dress</li>
+        <li>Birthday Decoration</li>
+        <li>Anniversary Decoration</li>
+      </ul>
+    </div>
+  </header>
+
+    <section class="recommended">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+           <div class="mb-3 text-start">
+            <select class="form-select" aria-label="Default select example">
+              <option selected="Default">Sort Packages</option>
+              <option value="price_asc">Price (Low to High)</option>
+              <option value="price_desc">Price (High to Low)</option>
+              <option value="name_asc">Name (A - Z)</option>
+              <option value="name_desc">Name (Z - A)</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-1.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Love Themed</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-2.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Romantic Fabulas Decorations</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-3.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Red Balloon Celebration</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-4.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Themed Love</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-5.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Themed Love</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-6.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Themed Love</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-7.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Themed Love</a></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <div class="service-box shadow h-100">
+              <div class="img-box">
+                <a href="anniversary-decoration-details.html"><img src="images/anniversary-8.jpg" class="w-100" alt="birthday-d"></a>
+              </div>
+              <div class="service-text overlay-cake text-center p-3">
+                <label><a href="anniversary-decoration-details.html">Anniversary Celebration Themed Love</a></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div id="locationPopup" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Let's Personalize Your Experience!</h2>
+        <p>
+          Find the perfect gifts for you or your loved ones — it's like magic!
+        </p>
+        <!-- Radio buttons for India/Outside India -->
+        <div class="radio-options">
+          <label>
+            <input type="radio" name="location" value="india" checked /> Within
+            India
+          </label>
+          <label>
+            <input type="radio" name="location" value="outside" /> Outside India
+          </label>
+        </div>
+        <!-- Input field for location or pincode -->
+        <div class="input-container">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" id="pincode" placeholder="* Enter delivery location or pincode" />
+        </div>
+        <!-- Button for Continue Shopping -->
+        <button type="submit" class="submit-btn">CONTINUE SHOPPING</button>
+      </div>
+    </div>
+
+    <section class="mt-2 social-media-footer">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Spread The Love On Social Media</h4>
+                    <div class="social-links-footer">
+                        <a href="#">
+                            <img src="images/instagram_mob.png" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="images/facebook_mob.png" alt="facebook_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/youtube_mob.png" alt="youtube_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/twitter-x-mob.png" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="images/linkdin_mob.png" alt="linkdin_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/pinterest_mob.png" alt="pinterest_mob">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-highlights">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="highlights-box">
+                        <div class="highlights-img">
+                            <img src="images/highlight-1.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>All in India</h4>
+                            <p>Happily Delivering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlights-box bdr-left">
+                        <div class="highlights-img">
+                            <img src="images/highlight-2.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>100% Secure Payments</h4>
+                            <p>All Major Credit & Debit Cards Accepted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlights-box bdr-left">
+                        <div class="highlights-img">
+                            <img src="images/highlight-3.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>2000000</h4>
+                            <p>Customers Across The India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Our Company</h4>
+                    <ul class="footer-list mob-mb-3">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-list mob-mb-3">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sell-with-us.html">Sell With Us</a></li>
+                        <li><a href="coupons.html">Coupons & Deals</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Policy & Security</h4>
+                    <ul class="footer-list">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cancellation-and-refund.html">Cancellation & Refund</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="right-section-footer">
+                        <h5>Simplify your gifting experience with our app.</h5>
+                        <div class="download-box">
+                            <div class="qr-code-section">
+                                <img src="images/qr.jpg" class="w-50" alt="">
+                            </div>
+                            <div class="dowload-platform">
+                                <a href="#">
+                                    <img src="images/play_store.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/app_store.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Back to top button -->
+        <a id="button" class="show"></a>
+    </footer>
+
+
+    <section class="payment-option">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="text-center col-md-12">
+                    <h4>We Accept</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/visa.jpg" class="w-100" alt="visa" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/master-card.jpg" class="w-100" alt="master-card" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/rupay.jpg" class="w-100" alt="rupay" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/amex.jpg" class="w-100" alt="amex" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/pay-pal.jpg" class="w-100" alt="pay-pal" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/payumoney.jpg" class="w-100" alt="payumoney" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/oxigne.jpg" class="w-100" alt="oxigne" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/paytm-footer.jpg" class="w-100" alt="Paytm" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/aitel-bank.jpg" class="w-100" alt="aitel-bank" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/mobikwik.jpg" class="w-100" alt="mobikwik" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script src="js/custom.js"></script>
+ <!-- Multi Image Slider JS -->
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ </body>
+ </html>
+
+ 

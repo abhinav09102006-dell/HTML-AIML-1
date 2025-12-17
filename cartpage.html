@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <title>Bdayfy</title>
+</head>
+
+<body>
+
+    <header class="desktop-header">
+        <div class="top-menu">
+            <div class="container-fluid px-5">
+                <div class="col-md-12 text-end">
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Currency - <strong>INR</strong></a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top-header">
+            <div class="container-fluid px-5">
+                <div class="top-header-box row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                            <span class="d-block desktop-only text-blue d-lg-none me-2 ms-2">
+                                <a href="login.html" class="cart-icon me-2">
+                                    <i class="fa-shopping-cart fas"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="top-search sticky-search" id="myHeader">
+                            <div class="toggl">
+                                <i class="fa-bars fas"></i>
+                            </div>
+                            <input type="text" class="form-control"
+                                placeholder="Search 5000+ flowers, cakes, gifts etc" name="" />
+                            <i class="fa-srch-rit fa-search fas"></i>
+                            <!-- Menu -->
+                            <ul class="nav-menu">
+                                <li class="mobile-nav"><img src="images/logo.png" alt="Logo" class="img-fluid" />
+                                    <a href="login.html" class="user-account"><i class="fa-sign-in-alt fas"></i>
+                                        Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-page.html">
+                                        Flowers
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cake-page.html">
+                                        Cakes
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        combos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Gifts
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Birthday Dress
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Birthday Decoration
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Anniversary Decoration
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Plan Your Event
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn-call nav-link"
+                                        href="https://www.dronainfotech.in/bdayfy/mobile-forms.html">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <div class="mt-4 container">
+                                    <div class="contact-info row">
+                                        <!-- Address -->
+                                        <div class="mb-3 form-text-2 col-12">
+                                            <p calss="form-text-2"><strong>Address: </strong>&nbsp; B-23 Sector 63 Noida
+                                                Gautam Buddha Nagar UP 201301 IN</p>
+                                        </div>
+                                        <!-- Email -->
+                                        <div class="mb-3 col-12">
+                                            <p calss="form-text-2"><strong>Email: </strong>&nbsp; <a
+                                                    href="mailto:info@bdayfy.com">info@bdayfy.com</a></p>
+                                        </div>
+                                        <!-- Phone -->
+                                        <div class="col-12">
+                                            <p calss="form-text-2"><strong>Phone: </strong>&nbsp; <a
+                                                    href="tel:918882412025">+91 8882412025</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="delivery-box" data-bs-toggle="modal" data-bs-target="#select_locatin">
+                            <div class="delivery-country">
+                                <img src="images/india-icon.png" class="flage" alt="menu" />
+                                <a href="#" class="country-input ms-1">IND</a>
+                            </div>
+                            <div class="delivery-in">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <a href="#">Delivery In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 login-remove text-end" style="positin: relative;">
+                        <div class="top-links position-relative">
+                            <span class="desktop-only text-blue"></span>
+                            <button class="user-h-button me-3">
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                                <img src="images/user-icon-grey.png" class="user-icon-grey" alt="user-icon">
+                                <div class="user_profile_popup">
+                                    <div class="popup_user">
+                                        <h4>Welcome</h4>
+                                        <p>To access account and manage orders</p>
+                                        <a href="login.html" class="log_in_signup">Signup/Login</a>
+                                        <ul>
+                                            <li><a href="user-info.html">My Profile</a></li>
+                                            <li><a href="orders.html">My Orders</a></li>
+                                            <li><a href="saved-address.html">My Address Book</a></li>
+                                            <li><a href="wallet.html">My Wallet</a></li>
+                                            <li><a href="reminder.html">My Reminders</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </button>
+                            <span class="desktop-only text-blue me-4">
+                                <a href="#" class="desktop-cart-icons">
+                                    <img src="images/without-heart.png" class="user-icon-grey" alt="user-icon">
+                                    <span>0</span>
+                                </a>
+                            </span>
+                            <span class="desktop-only text-blue me-2">
+                                <a href="cartpage.html" class="desktop-cart-icons">
+                                    <img src="images/cart.png" class="user-icon-grey" alt="user-icon">
+                                    <span>0</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="d-none web-cart">
+                            <div class="cart-header-2">
+                                <h5>My Cart(2)</h5>
+                                <button class="cart_close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="cart-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="cart-list-box-s">
+                                                <div class="item-list-cart">
+                                                    <div class="product-img">
+                                                        <img src="images/cake-1.jpg" alt="">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="product-detail">
+                                                        <h4>Festive Season Surprise Hamper</h4>
+                                                        <p>1799X1</p>
+                                                    </div>
+                                                    <button><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Deliver To</h6>
+                                                    <p><i class="fa-location-dot fa-solid"></i> 122001, Gurgaon, Haryana
+                                                    </p>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Delivery Date <a href="#">Change</a></h6>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="left-section">
+                                                                <h4>14</h4>
+                                                                <p>NOV<br />THU</p>
+                                                            </div>
+                                                            <div class="right-section">
+                                                                <p>Express Delivery : ₹ 49</p>
+                                                                <span>15:00 - 18:00 Hrs</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="cart-list-box-s">
+                                                <div class="item-list-cart">
+                                                    <div class="product-img">
+                                                        <img src="images/cake-1.jpg" alt="">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="product-detail">
+                                                        <h4>Festive Season Surprise Hamper</h4>
+                                                        <p>1799X1</p>
+                                                    </div>
+                                                    <button><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Deliver To</h6>
+                                                    <p><i class="fa-location-dot fa-solid"></i> 122001, Gurgaon, Haryana
+                                                    </p>
+                                                </div>
+                                                <div class="item-deli">
+                                                    <h6>Delivery Date <a href="#">Change</a></h6>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="left-section">
+                                                                <h4>14</h4>
+                                                                <p>NOV<br />THU</p>
+                                                            </div>
+                                                            <div class="right-section">
+                                                                <p>Express Delivery : ₹ 49</p>
+                                                                <span>15:00 - 18:00 Hrs</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="total-add-card">
+                                <ul>
+                                    <li>
+                                        <p>2 Base Item</p>
+                                        <span>₹ 3300</span>
+                                    </li>
+                                    <li>
+                                        <p>Shopping</p>
+                                        <span>₹ 3300</span>
+                                    </li>
+                                    <li>
+                                        <p>0 Add ons</p>
+                                        <span>0</span>
+                                    </li>
+                                    <li>
+                                        <p>Donation</p>
+                                        <span>0</span>
+                                    </li>
+                                </ul>
+                                <h5>Total : <strong>₹6498</strong></h5>
+                                <a href="#">proceed to checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-desktop">
+              <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown megamenu-li dmenu">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cakes
+                      </a>
+                      <div class="dropdown-menu megamenu sm-menu border-top col-3c" aria-labelledby="navbarDropdown">
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>Cakes By Type</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Eggless Cakes</a></li>
+                                    <li><a href="#">Midnight Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Photo Cakes</a></li>
+                                    <li><a href="#">Heart Shape Cakes</a></li>
+                                    <li><a href="#">Designer Cakes</a></li>
+                                    <li><a href="#">Fondant Cakes</a></li>
+                                    <li><a href="#">Dry Cakes</a></li>
+                                    <li><a href="#">CupCakes</a></li>
+                                    <li><a href="#">Pastry</a></li>
+                                    <li><a href="#">Jar Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cakes By Flavour</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Chocolate Cakes</a></li>
+                                    <li><a href="#">Truffle Cakes</a></li>
+                                    <li><a href="#">Black Forest Cakes</a></li>
+                                    <li><a href="#">Rasmalai Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Butterscotch Cakes</a></li>
+                                    <li><a href="#">Red Velvet Cakes</a></li>
+                                    <li><a href="#">Vanilla Cakes</a></li>
+                                    <li><a href="#">Pineapple Cakes</a></li>
+                                    <li><a href="#">Fruit Cakes</a></li>
+                                    <li><a href="#">Coffee Cakes</a></li>
+                                    <li><a href="#">Kitkat Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cakes By Theme</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Kids Cakes</a></li>
+                                    <li><a href="#">Unicorn Cakes</a></li>
+                                    <li class="yellow-strip"><a href="#">Half Cakes</a></li>
+                                    <li><a href="#">Barbie Doll Cakes</a></li>
+                                    <li><a href="#">Tier Cakes</a></li>
+                                    <li><a href="#">Cartoon Cakes</a></li>
+                                    <li><a href="#">Spiderman Cakes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Cake By Occasion</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Birthday Cakes</a></li>
+                                    <li><a href="#">Anniversary Cakes</a></li>
+                                    <li><a href="#">First Birthday Cakes</a></li>
+                                    <li><a href="#">First Anniversary Cakes</a></li>
+                                    <li><a href="#">25th Anniversary Cakes</a></li>
+                                </ul>
+                                <hr>
+                                <label>Cake Combos</label>
+                                <ul>
+                                    <li><a href="#">Cake Combos</a></li>
+                                    <li><a href="#">Cakes And Flowers</a></li>
+                                    <li><a href="#">Cakes and Chocolates</a></li>
+                                    <li><a href="#">Cakes and Teddies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 border-left">
+                                <label class="text-pink">Top Trending Links</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Pinata Cakes</a></li>
+                                    <li><a href="#">Pull Me Up Cakes</a></li>
+                                    <li><a href="#">Bento Cake</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><strong>All Cakes</strong></a></li>
+                                    <li><a href="#"><strong>Best Seller Cakes</strong></a></li>
+                                </ul>                            
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <a href="#"><img src="images/new-arrivals-cake.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="images/premium-cakes.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li dmenu">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Flowers
+                      </a>
+                      <div class="dropdown-menu megamenu sm-menu border-top col-3c" aria-labelledby="navbarDropdown">
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>By Type</label>
+                                <ul>
+                                    <li><a href="#">All Flowers & Bouquets</a></li>
+                                    <li class="yellow-strip"><a href="#">Roses</a></li>
+                                    <li><a href="#">Orchids</a></li>
+                                    <li><a href="#">Lilies</a></li>
+                                    <li><a href="#">Gerberas</a></li>
+                                    <li><a href="#">Carnations</a></li>
+                                    <li class="yellow-strip"><a href="#">Assorted Flowers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>By Occasion</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Birthday</a></li>
+                                    <li class="yellow-strip"><a href="#">Anniversary</a></li>
+                                    <li><a href="#">I am Sorry</a></li>
+                                    <li class="yellow-strip"><a href="#">Love & Affection</a></li>
+                                    <li><a href="#">Wedding</a></li>
+                                    <li class="yellow-strip"><a href="#">Congratulation</a></li>
+                                    <li><a href="#">Thank You</a></li>
+                                    <li><a href="#">Sympathy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>By Color</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Unicorn Cakes</a></li>
+                                    <li><a href="#">Red Flowers</a></li>
+                                    <li><a href="#">Pink Flowers</a></li>
+                                    <li><a href="#">Yellow Flowers</a></li>
+                                    <li><a href="#">White Flowers</a></li>
+                                    <li><a href="#">Purple Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Mixed Flowers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Flower By Collection</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Premium Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Basket Arrangements</a></li>
+                                    <li><a href="#">Exotic Flowers</a></li>
+                                    <li><a href="#">Flower Boxes</a></li>
+                                </ul>
+                                <hr>
+                                <label>Flower Combos</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Flowers And Cake</a></li>
+                                    <li><a href="#">Flowers and Chocolates</a></li>
+                                    <li><a href="#">Flowers and Teddies</a></li>
+                                    <li><a href="#">Flower Combos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 border-left">
+                                <label class="text-pink">Top Trending Links</label>
+                                <ul>
+                                    <li class="yellow-strip"><a href="#">Roses</a></li>
+                                    <li><a href="#">Birthday Flowers</a></li>
+                                    <li class="yellow-strip"><a href="#">Anniversary Flowers</a></li>
+                                    <li><a href="#">Flower Combos</a></li>
+                                    <li><a href="#">Mixed Flowers</a></li>
+                                </ul>                          
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <a href="#"><img src="images/best-seller-flowers.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="images/premium-flowers-image.jpg" class="w-100" alt="cake"></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Combos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Flower & Cake</a></li>
+                        <li><a class="dropdown-item" href="#">Flower & Chocolates</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gift.html">Gifts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="birthday-dress.html">Birthday Dress</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Birthday Decoration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Anniversary Decoration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="plan-your-event.html">Plan Your Event</a>
+                    </li>
+                    <li class="nav-item anim-link">
+                      <a class="nav-link py-0" href="#">
+                          <img src="images/delivery-anim.gif" class="delivery-ani" alt="delivery-anim">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="top-header-m">
+            <div class="left-section">
+                <button class="bar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="middle-box">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="right-section">
+                <a href="javascript:void(0)" class="search_icon_mobile">
+                    <span><i class="fa-magnifying-glass fa-solid"></i></span>
+                </a>
+                <a href="#" class="cart-icon">
+                    <i class="fa-heart fa-solid"></i>
+                    <span>0</span>
+                </a>
+                <a href="cartpage.html" class="cart-icon me-2">
+                    <i class="fa-shopping-cart fas"></i>
+                    <span>0</span>
+                </a>
+                <!-- <button class="three-dot">
+                <i class="fa-ellipsis-vertical fa-solid"></i>
+            </button> -->
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-card">
+                <div class="mobile-menu-head">
+                    <div class="profile-box">
+                        <div class="profile-img">
+                            <img src="images/cake/user.png" alt="">
+                        </div>
+                        <h5>Hi Guest</h5>
+                    </div>
+                    <a href="login.html">Login</a>
+                    <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-page.html">
+                            Flowers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cake-page.html">
+                            Cakes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="combos.html">
+                            combos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gift.html">
+                            Gifts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="birthday-dress.html">
+                            Birthday Dress
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plan-your-event.html">
+                            Birthday Decoration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plan-your-event.html">
+                            Anniversary Decoration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plan-your-event.html">
+                            Plan Your Event
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <!-- <h4 class="menu-title-1">ENQUIRIES</h4> -->
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="user-info.html">
+                            My Account
+                        </a>
+                    </li>
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="orders.html">
+                            My Order
+                        </a>
+                    </li>
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="wishlist.html">
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="#">
+                            Feedback
+                        </a>
+                    </li>
+                    <li class="nav_item_link nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                            Contact Us
+                        </a>
+                    </li>
+                    <!-- <li class="divider"></li> -->
+                </ul>
+                <div class="dowload-platform">
+                    <a href="#">
+                        <img src="images/play_store.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/app_store.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal-right">
+            <button class="close_btn_search"><i class="fa-solid fa-xmark"></i></button>
+            <form action="">
+                <input type="text" placeholder="Search by category">
+                <button class="search">Search</button>
+            </form>
+            <ul>
+                <li>Flowers</li>
+                <li>Cakes</li>
+                <li>Combos</li>
+                <li>Gifts</li>
+                <li>Birthday Dress</li>
+                <li>Birthday Decoration</li>
+                <li>Anniversary Decoration</li>
+            </ul>
+        </div>
+    </header>
+    <section class="mt-5 breadcrumb-section p-l-r">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">My Cart</a></li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="cart-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-box cls-head">
+                    <div class="wizard-header">
+                        <div class="step" data-step="1">
+                            <span>1</span>
+                            <h5>Cart</h5>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span>2</span>
+                            <h5>Address</h5>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span>3</span>
+                            <h5>Personalize</h5>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span>4</span>
+                            <h5>Payment</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="section-checkout">
+        <div class="container">
+            <div class="wizard-content">
+                <div class="step-content" data-step="1">
+                    <div class="step-one-section">
+                        <h3>Shopping Cart (4)</h3>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="check-pincode">
+                                    <ul>
+                                        <li><span><i class="fa-location-crosshairs fa-solid"></i> Enter Delivery
+                                                Pincode:</span></li>
+                                        <li><input type="text" placeholder="Pincode:"></li>
+                                        <li><button>Check</button></li>
+                                    </ul>
+                                </div>
+                                <div class="item-section-box-cart">
+                                    <ul>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper <span>Addon</span></h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                        <li>
+                                            <div class="cart-price-box">
+                                                <h5>₹ 949</h5>
+                                                <p><span>₹ 1,099</span> (14% off)</p>
+                                            </div>
+                                            <div class="left-detail-img">
+                                                <img src="images/flower-6.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item-detail-box">
+                                                <h5>Diwali Nuts and Chocolates Hamper</h5>
+                                                <p>Estimated Delivery: <span>Today</span></p>
+                                                <div class="cart-quantity">
+                                                    <div class="cart_itemd" style="color: #666;">
+                                                        Qty:
+                                                        <button class="btn qtyDown">-</button>
+                                                        <input class="form-control" type="number"
+                                                            onkeydown="return false" value="1" data-orig-qty="1"
+                                                            data-poc="0" min="1" id="" max="10" readonly="true">
+                                                        <button class="btn qtyUp">+</span>
+                                                    </div>
+                                                    <p class="de-cart-type">Shipping Type : Express</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i> Remove</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-5 mb-5 latest-blog like-product-section">
+                                    <div class="container">
+                                        <div class="product-info-tabs">
+                                            <div class="like-product-header">
+                                                <h4>You May Also Like</h4>
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5 more-like-product">
+                                            <div class="someProduct swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="card">
+                                                            <div class="gd-primary media media-2x1">
+                                                                <img class="blog-image" src="images/cake-1.jpg">
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="card__header-text">
+                                                                    <h3 class="card__title">Extra Caremal Fudge Cake
+                                                                    </h3>
+                                                                    <label class="text-product">
+                                                                        <span class="card__status">₹ 1199</span>
+                                                                        ₹ <span class="line-through">1249</span>
+                                                                        <span class="text-success">25% OFF</span>
+                                                                    </label>
+                                                                    <p class="mt-1 mb-0 rating-reviews"><span
+                                                                            class="raiting">4.4 <i
+                                                                                class="fa-solid fa-star-half-stroke"></i></span>
+                                                                        <span class="small-text">4332 Reviews</span>
+                                                                    </p>
+                                                                    <a href="#">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="card">
+                                                            <div class="gd-primary media media-2x1">
+                                                                <img class="blog-image" src="images/cake-2.jpg">
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="card__header-text">
+                                                                    <h3 class="card__title">Floral Vanilla Cream Cake
+                                                                    </h3>
+                                                                    <label class="text-product">
+                                                                        <span class="card__status">₹ 799</span>
+                                                                        ₹ <span class="line-through">899</span>
+                                                                        <span class="text-success">25% OFF</span>
+                                                                    </label>
+                                                                    <p class="mt-1 mb-0 rating-reviews"><span
+                                                                            class="raiting">4.4 <i
+                                                                                class="fa-solid fa-star-half-stroke"></i></span>
+                                                                        <span class="small-text">4332 Reviews</span>
+                                                                    </p>
+                                                                    <a href="#">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="card">
+                                                            <div class="gd-primary media media-2x1">
+                                                                <img class="blog-image" src="images/cake-3.jpg">
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="card__header-text">
+                                                                    <h3 class="card__title">Butterskotch Fudge Cake</h3>
+                                                                    <label class="text-product">
+                                                                        <span class="card__status">₹ 799</span>
+                                                                        ₹ <span class="line-through">999</span>
+                                                                        <span class="text-success">25% OFF</span>
+                                                                    </label>
+                                                                    <p class="mt-1 mb-0 rating-reviews"><span
+                                                                            class="raiting">4.4 <i
+                                                                                class="fa-solid fa-star-half-stroke"></i></span>
+                                                                        <span class="small-text">4332 Reviews</span>
+                                                                    </p>
+                                                                    <a href="#">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="card">
+                                                            <div class="gd-primary media media-2x1">
+                                                                <img class="blog-image" src="images/cake-4.jpg">
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="card__header-text">
+                                                                    <h3 class="card__title">Special Anniversary Cake
+                                                                    </h3>
+                                                                    <label class="text-product">
+                                                                        <span class="card__status">₹ 1149</span>
+                                                                        ₹ <span class="line-through">1399</span>
+                                                                        <span class="text-success">25% OFF</span>
+                                                                    </label>
+                                                                    <p class="mt-1 mb-0 rating-reviews"><span
+                                                                            class="raiting">4.4 <i
+                                                                                class="fa-solid fa-star-half-stroke"></i></span>
+                                                                        <span class="small-text">4332 Reviews</span>
+                                                                    </p>
+                                                                    <a href="#">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="card">
+                                                            <div class="gd-primary media media-2x1">
+                                                                <img class="blog-image" src="images/cake-5.jpg">
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="card__header-text">
+                                                                    <h3 class="card__title">Vanilla Special Cream Cake
+                                                                    </h3>
+                                                                    <label class="text-product">
+                                                                        <span class="card__status">₹ 499</span>
+                                                                        ₹ <span class="line-through">799</span>
+                                                                        <span class="text-success">25% OFF</span>
+                                                                    </label>
+                                                                    <p class="mt-1 mb-0 rating-reviews"><span
+                                                                            class="raiting">4.4 <i
+                                                                                class="fa-solid fa-star-half-stroke"></i></span>
+                                                                        <span class="small-text">4332 Reviews</span>
+                                                                    </p>
+                                                                    <a href="#">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="right-side-section">
+                                    <div class="coupons_box" data-bs-toggle="modal"
+                                        data-bs-target="#modal_popup_Coupons"><img src="images/gift-voucher.webp"
+                                            alt=""> Apply Coupons
+                                    </div>
+                                    <div class="cart-totl-box">
+                                        <p>Price Details (4 Items)</p>
+                                        <ul>
+                                            <li><span>MRP Total</span> <span>₹ 2,706</span></li>
+                                            <li><span>MRP Discount</span> <span class="discount_mrp">₹ -450</span></li>
+                                            <li><span>Delivery Charge</span> <span class="free">Free</span></li>
+                                            <li><span>Convenience Charge <i class="fa-info fa-solid"></i></span> <span
+                                                    class="free">₹ 9</span></li>
+                                            <li class="total">
+                                                <h5>Total Amount</h5>
+                                                <h5>₹ 2,265</h5>
+                                            </li>
+                                        </ul>
+                                        <button class="nextBtn">Continue to Checkout</button>
+                                        <h6>You will save ₹ 450 on this order</h6>
+                                    </div>
+                                    <div class="continue-shopping">
+                                        <button>Continue Shopping</button>
+                                    </div>
+                                    <ul class="shopping-avail">
+                                        <li><img src="images/cartdelivery.webp" alt=""><span>Delivery In
+                                                2 hours</span></li>
+                                        <li><img src="images/cartrusted.webp" alt=""><span>Trusted By Millions</span>
+                                        </li>
+                                        <li><img src="images/cartservice.webp" alt=""><span>Services In 6000
+                                                Cities</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content-2 step-content" data-step="2">
+                    <h6>Add Delivery Address</h6>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form class="form">
+                                <div class="mb-3 input_form_box">
+                                    <label for="">Select Country</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="6" data-countrycode="+61">Australia</option>
+
+                                        <option value="95" data-countrycode="+973">Bahrain</option>
+
+                                        <option value="2" data-countrycode="+1">Canada</option>
+
+                                        <option value="33" data-countrycode="+33">France</option>
+
+                                        <option value="35" data-countrycode="+49">Germany</option>
+
+                                        <option value="41" data-countrycode="+91" selected="">India</option>
+
+                                        <option value="42" data-countrycode="+62">Indonesia</option>
+
+                                        <option value="43" data-countrycode="+353">Ireland</option>
+
+                                        <option value="47" data-countrycode="+81">Japan</option>
+
+                                        <option value="51" data-countrycode="+965">Kuwait</option>
+
+                                        <option value="52" data-countrycode="+60">Malaysia</option>
+
+                                        <option value="180" data-countrycode="+977">Nepal</option>
+
+                                        <option value="55" data-countrycode="+64">New Zealand</option>
+
+                                        <option value="60" data-countrycode="+63">Philippines</option>
+
+                                        <option value="67" data-countrycode="+966">Saudi Arabia</option>
+
+                                        <option value="68" data-countrycode="+65">Singapore</option>
+
+                                        <option value="71" data-countrycode="+27">South Africa</option>
+
+                                        <option value="79" data-countrycode="+971">United Arab Emirates</option>
+
+                                        <option value="80" data-countrycode="+44">United Kingdom</option>
+
+                                        <option value="1" data-countrycode="+1">United States</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label">Recipient Name *</label>
+                                    <input type="text" class="form-control" id="" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label">Recipient Address *</label>
+                                    <textarea class="form-control" id="" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label">Landmark (optional)</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="input_form_box two-input-box">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Pin Code *</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">City *</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="input_form_box two-input-box">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Recipient Mobile Number *</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Alternate Mobile Number (optional)</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="py-2 check-radio-section">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Home
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Office
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3" checked>
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="button-group-box">
+                                    <button class="">CANCEL</button>
+                                    <button class="">SAVE</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="right-side-section">
+                                <h5 class="addres_d">Delivery Address & Order Summary</h5>
+                                <div class="address-show-box">
+                                    <div class="address-show-header">
+                                        <h6>Akash Bhardwaj</h6>
+                                        <span>Home</span>
+                                    </div>
+                                    <p>Gurgaon sector 36 Gurgaon narshinghpur
+                                        Gurgaon - 122002, Mobile: 9667969708</p>
+                                    <button>Change Address</button>
+                                </div>
+                                <div class="cart-totl-box">
+                                    <p>Price Details (4 Items)</p>
+                                    <ul>
+                                        <li><span>MRP Total</span> <span>₹ 2,706</span></li>
+                                        <li><span>MRP Discount</span> <span class="discount_mrp">₹ -450</span></li>
+                                        <li><span>Delivery Charge</span> <span class="free">Free</span></li>
+                                        <li><span>Convenience Charge <i class="fa-info fa-solid"></i></span> <span
+                                                class="free">₹ 9</span></li>
+                                        <li class="total">
+                                            <h5>Total Amount</h5>
+                                            <h5>₹ 2,265</h5>
+                                        </li>
+                                    </ul>
+                                    <button class="fixed_btn nextBtn">Continue</button>
+                                    <h6>You will save ₹ 450 on this order</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="step-content-2 step-content" data-step="3">
+                    <h6>Personalize your gift</h6>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form class="form">
+                                <div class="mb-3 input_form_box">
+                                    <label for="">Delivery Date and Time</label>
+                                    <input type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        class="form-control" id="" aria-describedby="emailHelp">
+                                </div>
+
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label">Occasion</label>
+                                    <div class="option-box">
+                                        <span class="option" data-option="Birthday">Birthday</span>
+                                        <span class="option" data-option="Anniversary">Anniversary</span>
+                                        <span class="option" data-option="Other">Other</span>
+
+                                    </div>
+                                </div>
+                                <div class="mb-3 input_form_box" id="otherInputBox">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="" id="ocassionSel" disabled="" selected="">Occasion</option>
+
+                                        <option class="option" value="1">Birthday</option>
+
+                                        <option class="option" value="2">Anniversary</option>
+
+                                        <option class="option" value="44">Childrens Day</option>
+
+                                        <option class="option" value="3">I am sorry</option>
+
+                                        <option class="option" value="4">Get well soon</option>
+
+                                        <option class="option" value="5">Just like that</option>
+
+                                        <option class="option" value="6">Congratulations</option>
+
+                                        <option class="option" value="7">Wedding</option>
+
+                                        <option class="option" value="8">New born</option>
+
+                                        <option class="option" value="9">Cheer up</option>
+
+                                        <option class="option" value="10">Appreciation</option>
+
+                                        <option class="option" value="11">Thank You</option>
+
+                                        <option class="option" value="18">Other</option>
+
+                                        <option class="option" value="23">Love and Affection</option>
+
+                                        <option class="option" value="50">Navaratri</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label">Personal Message</label>
+                                    <textarea class="form-control" id="" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 input_form_box">
+                                    <label for="" class="form-label"><strong>Sender Information</strong> Order related
+                                        communication will also be sent on these details.</label>
+                                </div>
+                                <div class="input_form_box two-input-box">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="py-2 check-radio-section check-radio-section-new">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Keep Surprise (Hide Sender Information from Recipient) <span><i
+                                                    class="fa-question fa-solid"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="right-side-section">
+                                <h5 class="addres_d">Delivery Address & Order Summary</h5>
+                                <div class="address-show-box">
+                                    <div class="address-show-header">
+                                        <h6>Akash Bhardwaj</h6>
+                                        <span>Home</span>
+                                    </div>
+                                    <p>Gurgaon sector 36 Gurgaon narshinghpur
+                                        Gurgaon - 122002, Mobile: 9667969708</p>
+                                    <button>Change Address</button>
+                                </div>
+                                <div class="cart-totl-box">
+                                    <p>Price Details (4 Items)</p>
+                                    <ul>
+                                        <li><span>MRP Total</span> <span>₹ 2,706</span></li>
+                                        <li><span>MRP Discount</span> <span class="discount_mrp">₹ -450</span></li>
+                                        <li><span>Delivery Charge</span> <span class="free">Free</span></li>
+                                        <li><span>Convenience Charge <i class="fa-info fa-solid"></i></span> <span
+                                                class="free">₹ 9</span></li>
+                                        <li class="total">
+                                            <h5>Total Amount</h5>
+                                            <h5>₹ 2,265</h5>
+                                        </li>
+                                    </ul>
+                                    <p class="term-condition"><i class="fa-check fa-solid"></i> I agree with the <a
+                                            href="#">terms and conditions</a></p>
+                                    <button data-bs-toggle="modal" data-bs-target="#otpModal">Continue to
+                                        Payment</button>
+
+
+                                </div>
+                                <ul class="shopping-avail">
+                                    <li><img src="images/cartdelivery.webp" alt=""><span>Delivery In
+                                            2 hours</span></li>
+                                    <li><img src="images/cartrusted.webp" alt=""><span>Trusted By Millions</span>
+                                    </li>
+                                    <li><img src="images/cartservice.webp" alt=""><span>Services In 6000
+                                            Cities</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content--4 step-content-3 step-content" data-step="4">
+                    <h6>Choose payment method</h6>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="left-section">
+                                <div class="tab">
+                                    <button class="tablinks" onclick="openCity(event, 'UPI')"
+                                        id="defaultOpen">UPI</button>
+                                    <button class="tablinks" onclick="openCity(event, 'CreditDebitCard')">Credit/Debit
+                                        Card
+                                    </button>
+                                    <button class="tablinks" onclick="openCity(event, 'Wallets')">Wallets</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Netbanking')">Netbanking</button>
+                                    <!-- <button class="tablinks" onclick="openCity(event, 'PayPal')">PayPal</button> -->
+                                </div>
+
+                                <div id="UPI" class="tabcontent">
+                                    <div class="upi_content">
+                                        <img src="images/bankUPI.webp" alt="">
+                                        <button type="button" class="paybtn">Pay with QR Code</button>
+                                        <hr />
+                                        <div class="bank_upi_deco">
+                                            <button class="pay_plus">+ Pay via other UPI ID</button>
+                                            <form action="">
+                                                <input type="text" placeholder="yourupi@bank">
+                                                <button>Verify</button>
+                                            </form>
+                                            <span>You need to have a registered UPI ID to make payment</span>
+                                            <p>Making Payment on Winni is 100% safe. Your transaction is processed
+                                                through a
+                                                secure https internet connection based on secure socket layer
+                                                technology.
+                                            </p>
+                                            <button class="paybuttongray" disabled>Pay ₹ 2,465 Now</button>
+                                            <ul>
+                                                <li><img src="images/cake/phonepe_web.webp" alt=""></li>
+                                                <li><img src="images/cake/paytmupi_web.png" alt=""></li>
+                                                <li><img src="images/cake/bhim_web.webp" alt=""></li>
+                                                <li><img src="images/cake/amazonpayupi-v2.png" alt=""></li>
+                                                <li><img src="images/cake/googlepay_web.webp" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="CreditDebitCard" class="tabcontent">
+                                    <form action="" class="CreditDebitCard_form">
+                                        <input type="text" class="form-control" placeholder="Card Number" name="" id="">
+                                        <input type="text" class="form-control" placeholder="Name on Card" name=""
+                                            id="">
+                                        <div class="card_ex_cvv">
+                                            <div class="expiry_date">
+                                                <input type="text" class="form-control" placeholder="MM" name="" id="">
+                                                <span>/</span>
+                                                <input type="text" class="form-control" placeholder="YY" name="" id="">
+                                            </div>
+                                            <div class="cvv">
+                                                <input type="text" class="form-control" placeholder="CVV" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Save this card for faster payments
+                                            </label>
+                                        </div>
+                                        <button class="paybuttongray" disabled>Pay ₹ 2,465 Now</button>
+                                    </form>
+
+                                    <img src="images/cake/paymentmethods.avif" alt="">
+                                </div>
+
+                                <div id="Wallets" class="tabcontent">
+                                    <div class="Wallets">
+                                        <p class="paragrap_text"><strong>Offer:</strong> Make payment with Mobikwik
+                                            wallet and get upto ₹750
+                                            cashback. Minimum
+                                            guranteed cashback of ₹25 . Use coupon code MBK750 on Mobikwik website to
+                                            avail this offer.</p>
+                                        <ul>
+                                            <li class="">
+                                                <img src="images/cake/paytm.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/amzn-pay.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/mobikwik.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                        <span>More Wallet options:</span>
+                                        <select class="form-select" name="" id="">
+                                            <option noselect="" value="">Choose a Wallet</option>
+                                            <option disabled="">----</option>
+                                            <option value="paytm">Paytm</option>
+                                            <option value="amazonpay">Amazon Pay</option>
+                                            <option value="mobikwik">Mobikwik</option>
+                                            <option value="payzapp">HDFC Bank - PayZapp</option>
+                                            <option value="freecharge">FreeCharge</option>
+                                            <option value="olamoney">Ola Money</option>
+                                            <option value="jiomoney">JioMoney</option>
+                                            <option value="airtelmoney">Airtel Money</option>
+                                        </select>
+                                        <button class="paybuttongray" disabled>Pay ₹ 2,465 Now</button>
+                                        <p class="text_b">Making Payment on Winni is 100% safe. Your transaction is
+                                            processed through a secure https internet connection based on secure socket
+                                            layer technology.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="Netbanking" class="tabcontent">
+                                    <div class="Wallets">
+                                        <p class="paragrap_text"><strong>Offer:</strong> Make payment with Mobikwik
+                                            wallet and get upto ₹750
+                                            cashback. Minimum
+                                            guranteed cashback of ₹25 . Use coupon code MBK750 on Mobikwik website to
+                                            avail this offer.</p>
+                                        <ul>
+                                            <li class="">
+                                                <img src="images/cake/hdfc.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/kotak.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/sbi.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/icici.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/axis.jpg" alt="">
+                                            </li>
+                                            <li class="">
+                                                <img src="images/cake/yes.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                        <span>Other options::</span>
+                                        <select class="form-select" name="" id="">
+                                            <option noselect="" value="">Choose a bank</option>
+                                            <option disabled="">----</option>
+                                            <option value="NB_AIRTEL" data-bankcode="JP_AIRTEL">Airtel Payments Bank
+                                            </option>
+                                            <option value="NB_ANDHRA" data-bankcode="JP_ANDHRA">Andhra Bank</option>
+                                            <option value="NB_AXIS" data-bankcode="JP_AXIS">Axis Bank</option>
+                                            <!-- <option value="NB_BBKM">Bank of Bahrain and Kuwait</option> -->
+                                            <!-- <option value="NB_BOB">Bank of Baroda</option> -->
+                                            <option value="NB_BOI" data-bankcode="JP_BOI">Bank of India</option>
+                                            <option value="NB_BOM" data-bankcode="JP_BOM">Bank of Maharashtra</option>
+                                            <option value="NB_CANR" data-bankcode="JP_CANR">Canara Bank</option>
+                                            <option value="NB_CSB" data-bankcode="JP_CSB">Catholic Syrian Bank</option>
+                                            <option value="NB_CBI" data-bankcode="JP_CBI">Central Bank Of India</option>
+                                            <option value="NB_CITI" data-bankcode="JP_CITI">Citi Bank NetBanking
+                                            </option>
+                                            <option value="NB_CUB" data-bankcode="JP_CUB">CityUnion</option>
+                                            <option value="NB_CORP" data-bankcode="JP_CORP">Corporation Bank</option>
+                                            <option value="NB_COSMOS" data-bankcode="JP_COSMOS">COSMOS Bank</option>
+                                            <option value="NB_DENA" data-bankcode="JP_DENA">DENA Bank</option>
+                                            <option value="NB_DEUT" data-bankcode="JP_DEUT">Deutsche Bank</option>
+                                            <option value="NB_DCB" data-bankcode="JP_DCB">Development Credit Bank
+                                            </option>
+                                            <option value="NB_DLS" data-bankcode="JP_DLS">Dhanalaxmi Bank</option>
+                                            <option value="NB_FED" data-bankcode="JP_FED">Federal Bank</option>
+                                            <option value="NB_HDFC" data-bankcode="JP_HDFC">HDFC Bank</option>
+                                            <option value="NB_ICICI" data-bankcode="JP_ICICI">ICICI Netbanking</option>
+                                            <option value="NB_IDFC" data-bankcode="JP_IDFC">IDFC Bank</option>
+                                            <!-- <option value="NB_ING">ING Vysya Bank</option> -->
+                                            <option value="NB_INDB" data-bankcode="JP_INDB">Indian Bank </option>
+                                            <option value="NB_IOB" data-bankcode="JP_IOB">Indian Overseas Bank</option>
+                                            <option value="NB_INDUS" data-bankcode="JP_INDUS">IndusInd Bank</option>
+                                            <option value="NB_IDBI" data-bankcode="JP_IDBI">Industrial Development Bank
+                                                of India</option>
+                                            <option value="NB_JNK" data-bankcode="JP_JNK">Jammu and Kashmir Bank
+                                            </option>
+                                            <option value="NB_JSB" data-bankcode="JP_JSB">Janata Sahakari Bank</option>
+                                            <option value="NB_KARN" data-bankcode="JP_KARN">Karnataka Bank</option>
+                                            <option value="NB_KVB" data-bankcode="JP_KVB">Karur Vysya </option>
+                                            <option value="NB_KVBCORP" data-bankcode="JP_KVBCORP">Karur Vysya Corporate
+                                                Banking</option>
+                                            <option value="NB_KOTAK" data-bankcode="JP_KOTAK">Kotak Bank</option>
+                                            <option value="NB_LVB" data-bankcode="JP_LVB">Lakshmi Vilas Bank Retail
+                                            </option>
+                                            <option value="NB_OBC" data-bankcode="JP_OBC">Oriental Bank Of Commerce
+                                            </option>
+                                            <option value="NB_PNB" data-bankcode="JP_PNB">Punjab National Bank</option>
+                                            <option value="NB_PMCB" data-bankcode="JP_PMCB">Punjab and Maharashtra Coop
+                                                Bank</option>
+                                            <option value="NB_PNJSB" data-bankcode="JP_PNJSB">Punjab and Sind Bank
+                                            </option>
+                                            <!-- <option value="NB_RATN">Ratnakar Bank</option> -->
+                                            <!-- <option value="NB_RBS">Royal Bank of Scotland</option> -->
+                                            <option value="NB_SARASB" data-bankcode="">Saraswat Bank</option>
+                                            <option value="NB_SVCB" data-bankcode="JP_SVCB">Shamrao Vithal Coop Bank
+                                            </option>
+                                            <option value="NB_SOIB" data-bankcode="JP_SOIB">South Indian Bank</option>
+                                            <option value="NB_SCB" data-bankcode="JP_SCB">Standard Chartered Bank
+                                            </option>
+                                            <!-- <option value="NB_SBBJ">State Bank of Bikaner and Jaipur</option> -->
+                                            <!-- <option value="NB_SBH">State Bank of Hyderabad</option> -->
+                                            <option value="NB_SBI" data-bankcode="JP_SBI">State Bank of India</option>
+                                            <!-- <option value="NB_SBM">State Bank of Mysore</option> -->
+                                            <!-- <option value="NB_SBP">State Bank of Patiala</option> -->
+                                            <!-- <option value="NB_SBT">State Bank of Travancore</option> -->
+                                            <option value="NB_SYNB" data-bankcode="NB_SYNB">Syndicate Bank</option>
+                                            <!-- <option value="NB_TNSC">Tamil Nadu State Apex Coop Bank</option> -->
+                                            <option value="NB_TMB" data-bankcode="JP_TMB">Tamilnad Mercantile Bank
+                                            </option>
+                                            <option value="NB_NAIB" data-bankcode="JP_NAIB">The Nainital Bank</option>
+                                            <option value="NB_UCOB" data-bankcode="JP_UCOB">UCO Bank</option>
+                                            <option value="NB_UBICORP" data-bankcode="JP_UBICORP">Union Bank Corporate
+                                                Banking</option>
+                                            <option value="NB_UBI" data-bankcode="JP_UBI">Union Bank of India</option>
+                                            <option value="NB_UNIB" data-bankcode="JP_UNIB">United Bank Of India
+                                            </option>
+                                            <!-- <option value="NB_VJYB">Vijaya Bank</option> -->
+                                            <option value="NB_YESB" data-bankcode="JP_YESB">Yes Bank</option>
+                                        </select>
+                                        <button class="paybuttongray" disabled>Pay ₹ 2,465 Now</button>
+                                        <p class="text_b">Making Payment on Winni is 100% safe. Your transaction is
+                                            processed through a secure https internet connection based on secure socket
+                                            layer technology.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="PayPal" class="tabcontent">
+                                    <h3>PayPal </h3>
+                                    <p>Tokyo is the capital of Japan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-content">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-content-box">
+                        <h2 class="text-center">BdayFy: Send Flowers, Cakes, Gifts &amp; Plants Online Across India</h2>
+                        <p class="mb-4">At BdayFy, we take pride in delivering the highest quality flowers, cakes, plants, and gifts
+                            to your loved ones. Our diverse range ensures there's something perfect for every occasion.
+                            From romantic roses to delightful chocolate cakes and vibrant indoor plants, we have it all.
+                            As India's most trusted gifting brand, we guarantee fresh and beautiful flowers, delicious
+                            cakes, vibrant plants, and unique gifts that bring joy and smiles. Enjoy the convenience of
+                            doorstep delivery with our safe and secure packaging, ensuring your order arrives in
+                            pristine condition. Let’s explore our collection a little better:</p>
+
+                        <p class="mb-4"><strong>Flowers</strong>: At BdayFy, we offer a stunning range of flower bouquets and
+                            arrangements. Choose from a variety of flowers like roses, carnations, sunflowers, orchids,
+                            and gerberas. For something special, explore our luxury flowers like Cape Cup, Taal palm,
+                            Limonium, and Eucalyptus. Our reliable flower delivery in india service ensures your flowers
+                            are handled with care and arrive fresh and beautiful.</p>
+
+                        <p class="mb-4"><strong>Cakes</strong>: Our freshly baked &amp; delicious cakes are FSSAI-certified, ensuring
+                            safety and quality. We offer a wide range of flavours, such as chocolate, black forest, red
+                            velvet, tiramisu, coffee, blueberry, and various cake types, including bomb cakes, designer
+                            cakes theme cakes, photo cakes, pinata cakes, fruit cakes, &amp; bento cakes. Our online
+                            cake delivery service guarantees safe and timely delivery.</p>
+
+                        <p class="mb-4"><strong>Plants</strong>: At BdayFy, we understand the need of plants for home and offer an
+                            extensive range of plants to brighten your indoor spaces. Our plants are not just healthy
+                            but also come potted in beautiful planters that add a touch of elegance to any space. With
+                            BdayFy's doorstep plants delivery same day, you can enjoy the convenience of having your
+                            plants delivered safely and swiftly.</p>
+
+
+                        <p class="mb-4"><strong>Gifts</strong>: Finding new and trendy gift ideas can be challenging, but we cater to
+                            that need with an amazing gift range. Our variety includes gifts under categories such as
+                            home decor, dining &amp; serving, jewellery, showpieces, candles, spiritual gifts, soft
+                            toys, and perfumes. We also offer a wide range of heart-warming personalised gifts like
+                            mugs, cushions, wooden planks, photo frames, LED lamps, neon lights, caricatures, key
+                            chains, bar accessories, sippers, bottles, and more. One can also explore and order gifts
+                            online based on the occasion and the relationships they want to pamper.</p>
+
+                        <p class="mb-4"><strong>Combos &amp; Hampers</strong>: At BdayFy, we recognise the joy of gifting and offer
+                            an exquisite range of combos and hampers to make every occasion special. From delightful
+                            cakes and flowers combos to charming plant &amp; cake pairings and even elegant flower &amp;
+                            plant combos, we have something to suit every taste and preference. Our thoughtfully curated
+                            hampers, filled with premium goodies, are designed to delight your loved ones and add a
+                            touch of elegance to your celebrations.</p>
+
+                        <p class="mb-4"><strong>Personalised Gifts</strong>: Every gift should reflect your unique bond with your
+                            loved ones. That's why we offer a stunning collection of personalised gifts, perfect for
+                            adding a personal touch to any occasion. From custom mugs, cushions, and water bottles to
+                            creative caricatures, diaries, coasters, fridge magnets, key chains, and more, our range is
+                            designed to make every moment memorable. Our seamless delivery service ensures that your
+                            personalised gifts reach their destination on the same day, bringing joy and a heartfelt
+                            connection to your special ones.</p>
+
+
+                        <h3>Shop &amp; Send Gifts Online On Different Occasions to Surprise Your Loved Ones</h3>
+                        <p>Every special moment in life deserves to be celebrated with love and thoughtfulness. At
+                            BdayFy, the perfect gift can transform any occasion into a cherished memory.</p>
+
+                        <p class="mb-4"><strong>Mother’s Day:</strong> Express your love and gratitude with thoughtful gifts on
+                            Mother’s Day. Choose from a wide range of heartfelt gifts, including flowers, personalised
+                            items, and hampers, to make her day unforgettable.</p>
+
+
+                        <p class="mb-4"><strong>Valentine’s Day:</strong> Make your Valentine feel extra special with romantic gifts
+                            that speak from the heart. From classic flowers and chocolates to unique personalised gifts,
+                            find the perfect way to show your love and affection.</p>
+
+
+                        <p class="mb-4"><strong>Birthday:</strong> Surprise your loved ones with birthday gifts that bring joy and
+                            happiness. Explore a variety of options, including cakes, personalised gifts, and combos, to
+                            create lasting memories on their special day.</p>
+
+
+                        <p class="mb-4"><strong>Anniversary:</strong> Mark your milestones with meaningful anniversary gifts. Whether
+                            it’s flowers, cakes, or personalised keepsakes, our selection will help you celebrate your
+                            love and create beautiful memories together.</p>
+
+
+                        <p class="mb-4"><strong>Women’s Day:</strong> Celebrate the strength, grace, and achievements of the women in
+                            your life with thoughtful Women’s Day gifts. Choose from a range of empowering and
+                            personalised gifts to show your appreciation and admiration.</p>
+
+
+                        <p class="mb-4"><strong>Father’s Day:</strong> Make Father’s Day special with gifts that convey your love and
+                            respect. From practical to personalised, our collection offers the perfect way to show your
+                            appreciation for the father figures in your life.</p>
+
+                        <p class="mb-4">At BdayFy, we cater to all occasions and have the best gifts that reflect your love and
+                            thoughtfulness, making every celebration unforgettable. Choose BdayFy for your special
+                            moments, and let us help you create lasting memories with the perfect gift for every
+                            occasion.</p>
+
+
+                        <h3>Explore &amp; Order Online Special Festive Occasion Gifts</h3>
+                        <p>Festive moments in life deserve to be celebrated with love and thoughtfulness. At BdayFy, we
+                            believe that the perfect gift can transform any celebration into a cherished memory. That's
+                            why our range includes something for every festival and every relationship, ensuring your
+                            gift is as unique as your bond.</p>
+
+
+
+                        <p class="mb-4"><strong>Raksha Bandhan:</strong> Celebrate the bond of sibling love with our exclusive Raksha
+                            Bandhan gifts. From vibrant Rakhis to thoughtful hampers, find the perfect way to express
+                            your affection and make this festival unforgettable.</p>
+
+
+                        <p class="mb-4"><strong>Holi:</strong> Brighten up your Holi celebrations with our vibrant gifts. Choose from
+                            colourful sweets, playful pichkaris, and festive hampers to spread joy and make your Holi as
+                            lively as the colours of spring.</p>
+
+
+                        <p class="mb-4"><strong>Diwali:</strong> Illuminate your Diwali with our exquisite range of gifts. From
+                            traditional diyas to lavish sweet boxes, and decorative hampers, we offer everything you
+                            need to make your Diwali celebrations truly special.</p>
+
+
+                        <p class="mb-4"><strong>Eid:</strong> Make your Eid celebrations sweeter with our thoughtfully curated gifts.
+                            Explore a variety of traditional sweets, elegant hampers, and personalised items that
+                            capture the spirit of joy and togetherness this festive season.</p>
+
+
+                        <p class="mb-4"><strong>Christmas:</strong> Spread the warmth of Christmas with our special festive gifts.
+                            From beautifully decorated Christmas cakes to charming gift hampers and personalised items,
+                            we have everything to make your celebrations magical.</p>
+
+
+                        <p class="mb-4"><strong>Karwa Chauth:</strong> Celebrate the love and commitment of Karwa Chauth with our
+                            exclusive Karva Chauth gift collection. Choose from traditional pooja thalis, personalised
+                            gifts, and elegant hampers to make this day of fasting and prayers even more special.</p>
+
+
+                        <p class="mb-4">At BdayFy, we cater to all festive occasions and have the best gifts that reflect your love
+                            and thoughtfulness, making every celebration unforgettable. Choose BdayFy for your festive
+                            moments, and let us help you create lasting memories with the perfect gift for every
+                            occasion.</p>
+
+                        <h3>Buy &amp; Send Rakhi Online From BdayFy - Raksha Bandhan 2024</h3>
+                        <p class="mb-4">The festival that celebrates the lovely bond of brother and sister and that knows no bounds,
+                            Raksha Bandhan 2024 arrives. And it's time that sisters start looking for beautiful rakhi to
+                            adorn their brothers' wrists, and brothers are in search of amazing rakhi gifts. At BdayFy,
+                            we have a collection of rakhis crafted with love, just like every year. Our rakhis are
+                            unique and reflect unmatchable elegance. We welcome siblings to buy rakhi online from our
+                            website and mobile app to celebrate the auspicious occasion. You will get the best quality
+                            rakhis and rakhi gifts packed with the utmost care and delivered to your doorsteps. Not only
+                            that, you get to explore rakhis that are not easily available in the market.We also offer
+                            Express Rakhi Delivery, along with a complimentary Roli Chawal set with every order,
+                            ensuring a memorable and traditional Raksha Bandhan celebration.</p>
+
+                        <h3>Celebrate Diwali 2024 with Exclusive Gifts from BdayFy</h3>
+                        <p class="mb-4">As Diwali 2024 approaches, the excitement of gift-giving fills the air. BdayFy is your
+                            ultimate destination to explore an extensive range of Diwali gifts that add joy and warmth
+                            to this auspicious occasion. From traditional gift hampers to modern gift options, we’ve got
+                            you covered with the best collection of Diwali gifts online. Explore our wide array of
+                            Diwali offerings and make this Diwali 2024 unforgettable for your loved ones with meaningful
+                            and memorable gifts. When it comes to selecting the perfect gift for your loved ones, our
+                            Diwali gift hampers make an ideal choice. Filled with a variety of delights like sweets, dry
+                            fruits, chocolates, and more, these hampers are designed to bring smiles to everyone’s face
+                            during the festival of lights. With BdayFy’s reliable delivery services, sending Diwali
+                            gifts online is quick and hassle-free. Whether you need same-day delivery, midnight
+                            delivery, early morning, fixed-time or express delivery, we ensure your gifts reach their
+                            destination on time, spreading festive cheer.</p>
+
+                        <h3>Never Miss Out on Celebrations with BdayFy On-time Delivery</h3>
+                        <p class="mb-4">At BdayFy, we understand the importance of timely surprises in making every celebration
+                            unforgettable. With our reliable same-day delivery and midnight delivery services, you can
+                            rest assured that your thoughtful gifts will reach their destination on time, no matter the
+                            occasion. Whether it's our delightful range of cakes, stunning floral arrangements,
+                            personalised gifts, or carefully curated combos, we ensure your loved ones receive their
+                            surprises when it matters most. From birthdays and anniversaries to festive occasions like
+                            Raksha Bandhan and Diwali, BdayFy's on-time delivery guarantees you never miss out on making
+                            your moments truly special.</p>
+
+                        <h3>Save Big with BdayFy's Exclusive Offers and Discounts</h3>
+                        <p class="mb-4">At BdayFy, we believe in making gifting easy and affordable for everyone. That's why we keep
+                            dropping special offers throughout the year, ensuring you always have the perfect gift at
+                            the best price. Whether it's a birthday, anniversary, or just because, our exclusive
+                            discounts and year-round offers help you save big while spreading joy. Explore our wide
+                            range of flowers, cakes, and personalised gifts, and enjoy significant savings on every
+                            purchase. With BdayFy Coupons, you can make every moment special without breaking the bank.
+                            Stay tuned for more exciting deals, and start gifting today! Check out our late cups and
+                            deals!</p>
+
+
+                        <h3>Unleash the Power of Gifting: Install Our Android &amp; iOS App Today</h3>
+                        <p class="mb-4">Gifts hold the magical ability to convey emotions that words alone may struggle to express.
+                            BdayFy understands the profound importance of gifting in our lives. That's why we bring you
+                            an extraordinary feature-packed App, available for Android and iOS devices, to experience
+                            the joy of gifting like never before. Our user-friendly app is your on-the-go companion for
+                            shopping for online gifts. Offering seamless navigation, it allows for easy browsing of our
+                            diverse collection. With BdayFy App, you can keep track of your orders and stay updated with
+                            notifications on ongoing offers and deals for the best finds at unbeatable prices. So,
+                            download it now and start spreading smiles!</p>
+
+                    </div>
+                </div>
+    </section>
+
+
+    <section class="mt-2 social-media-footer">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Spread The Love On Social Media</h4>
+                    <div class="social-links-footer">
+                        <a href="#">
+                            <img src="images/instagram_mob.png" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="images/facebook_mob.png" alt="facebook_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/youtube_mob.png" alt="youtube_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/twitter-x-mob.png" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="images/linkdin_mob.png" alt="linkdin_mob">
+                        </a>
+                        <a href="#">
+                            <img src="images/pinterest_mob.png" alt="pinterest_mob">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-highlights">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="highlights-box">
+                        <div class="highlights-img">
+                            <img src="images/highlight-1.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>All in India</h4>
+                            <p>Happily Delivering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlights-box bdr-left">
+                        <div class="highlights-img">
+                            <img src="images/highlight-2.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>100% Secure Payments</h4>
+                            <p>All Major Credit & Debit Cards Accepted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlights-box bdr-left">
+                        <div class="highlights-img">
+                            <img src="images/highlight-3.png" alt="highlight">
+                        </div>
+                        <div class="highlights-text">
+                            <h4>2000000</h4>
+                            <p>Customers Across The India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Our Company</h4>
+                    <ul class="footer-list mob-mb-3">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-list mob-mb-3">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sell-with-us.html">Sell With Us</a></li>
+                        <li><a href="coupons.html">Coupons & Deals</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Policy & Security</h4>
+                    <ul class="footer-list">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cancellation-and-refund.html">Cancellation & Refund</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="right-section-footer">
+                        <h5>Simplify your gifting experience with our app.</h5>
+                        <div class="download-box">
+                            <div class="qr-code-section">
+                                <img src="images/qr.jpg" class="w-50" alt="">
+                            </div>
+                            <div class="dowload-platform">
+                                <a href="#">
+                                    <img src="images/play_store.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/app_store.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Back to top button -->
+        <a id="button" class="show"></a>
+    </footer>
+
+
+    <section class="payment-option">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="text-center col-md-12">
+                    <h4>We Accept</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/visa.jpg" class="w-100" alt="visa" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/master-card.jpg" class="w-100" alt="master-card" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/rupay.jpg" class="w-100" alt="rupay" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/amex.jpg" class="w-100" alt="amex" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/pay-pal.jpg" class="w-100" alt="pay-pal" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/payumoney.jpg" class="w-100" alt="payumoney" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/oxigne.jpg" class="w-100" alt="oxigne" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/paytm-footer.jpg" class="w-100" alt="Paytm" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/aitel-bank.jpg" class="w-100" alt="aitel-bank" /></a>
+                    </div>
+                </div>
+                <div class="mb-3 col-2 col-lg-1">
+                    <div class="img-box">
+                        <a href="#"><img src="images/mobikwik.jpg" class="w-100" alt="mobikwik" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="float-whatapp">
+        <a href="https://api.whatsapp.com/send?phone=8882412025" target="_blank">
+            <img src="images/whatapp.png" alt="whatapp">
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="fade modal modal_popup" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="fs-5 modal-title" id="dateSelect">Select Delivery Date</h5>
+                    <h5 class="fs-5 modal-title" id="slotSelect"><img src="images/cake/arrow-b.png" alt=""> Select
+                        Delivery Time
+                        Slot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="calender-section">
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                                <p class="calendar-current-date"></p>
+                                <div class="calendar-navigation">
+                                    <span id="calendar-prev" class="material-symbols-rounded">
+                                        <i class="fa-angle-left fas"></i>
+                                    </span>
+                                    <span id="calendar-next" class="material-symbols-rounded">
+                                        <i class="fa-angle-right fas"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="calendar-body">
+                                <ul class="calendar-weekdays">
+                                    <li>Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                                <ul class="calendar-dates"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="date-time-box">
+                        <ul class="list-date">
+                            <li class="list-li">
+                                <button>
+                                    <div class="left-section">
+                                        <h5>Fixed Time Delivery</h5>
+                                        <p>Choose from any 1-hour slot</p>
+                                    </div>
+                                    <span>₹ 99</span>
+                                </button>
+                                <div class="select-slot-box">
+                                    <h6>Select Time Slot</h6>
+                                    <ul>
+                                        <li class="active"><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <button>
+                                    <div class="left-section">
+                                        <h5>Pre-Midnight Delivery</h5>
+                                        <p>Choose from any 1-hour slot</p>
+                                    </div>
+                                    <span>₹ 299</span>
+                                </button>
+                                <div class="select-slot-box">
+                                    <h6>Select Time Slot</h6>
+                                    <ul>
+                                        <li class="active"><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                        <li><span></span>11:00 AM - 12:00 PM</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fade modal" id="otpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="fs-5 modal-title" id="exampleModalLabel">Verify</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="opt-section">
+                        <p>Your code was sent to you via Mobile Number</p>
+                        <span class="phone_text"><i class="fa-phone fa-solid"></i> - +91 ******9708</span>
+                        <div class="otp-input">
+                            <input type="number" min="0" max="9" value="" required autocomplete="one-time-code">
+                            <input type="number" min="0" max="9" value="" required autocomplete="one-time-code">
+                            <input type="number" min="0" max="9" value="" autocomplete="one-time-code">
+                            <input type="number" min="0" max="9" value="" required autocomplete="one-time-code">
+                        </div>
+                        <div class="resend-text">
+                            <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                            <span id="timer"></span>
+                        </div>
+                        <div class="button_otp_box">
+                            <button type="button" data-bs-dismiss="modal">Skip OTP</button>
+                            <button type="button" class="nextBtn">Verify OTP</button>
+                            <!-- onclick="verifyOTP()" -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fade modal modal_popup_Coupons" id="modal_popup_Coupons" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="fs-5 modal-title">Discount Coupons</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="coupon_box_field">
+                        <input type="text" name="" id="">
+                        <button>Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Owl Carousel Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Custom JS for Carousel -->
+    <script></script>
+    <!-- Bootstrap JS Bundle (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Open menu on bar-btn click
+            $('.bar-btn').click(function () {
+                $('.mobile-menu').addClass('active');
+            });
+
+            // Close menu on close-menu button click
+            $('.close-menu, .mobile-menu-head button').click(function () {
+                $('.mobile-menu').removeClass('active');
+            });
+        });
+
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            let currentStep = 1;
+            const totalSteps = 4;
+
+            function showStep(step) {
+                $(".step").removeClass("active");
+                $('.step[data-step="' + step + '"]').addClass("active");
+
+                $(".step-content").removeClass("active");
+                $('.step-content[data-step="' + step + '"]').addClass("active");
+            }
+
+            showStep(currentStep);
+
+            // Event listener for Next button
+            $(".nextBtn").click(function () {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
+            });
+
+            // Event listener for Previous button
+            $(".prevBtn").click(function () {
+                if (currentStep > 1) {
+                    currentStep--;
+                    showStep(currentStep);
+                }
+            });
+
+            // Allow clicking on step headers to navigate
+            $(".step").click(function () {
+                const step = $(this).data("step");
+                currentStep = step;
+                showStep(step);
+            });
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper(".someProduct", {
+            slidesPerView: 1.3,
+            spaceBetween: 8,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#otherInputBox").hide();
+            $(".option").click(function () {
+                const selectedOption = $(this).data("option");
+
+                // Remove 'active' class from all options and add it to the selected one
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+
+                // Show the 'Other' input box only if the "Other" option is selected
+                if (selectedOption === "Other") {
+                    $("#otherInputBox").show();
+                } else if (selectedOption === "Birthday" || selectedOption === "Anniversary") {
+                    $("#otherInputBox").hide();
+                } else {
+                    $("#otherInputBox").hide();
+                }
+            });
+        });
+
+
+    </script>
+    <script>
+        $("#slotSelect").hide()
+        $(".date-time-box").hide()
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth();
+
+        const day = document.querySelector(".calendar-dates");
+
+        const currdate = document.querySelector(".calendar-current-date");
+
+        const prenexIcons = document.querySelectorAll(".calendar-navigation span");
+
+        // Array of month names
+        const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        // Function to generate the calendar
+        const manipulate = () => {
+
+            // Get the first day of the month
+            let dayone = new Date(year, month, 1).getDay();
+
+            // Get the last date of the month
+            let lastdate = new Date(year, month + 1, 0).getDate();
+
+            // Get the day of the last date of the month
+            let dayend = new Date(year, month, lastdate).getDay();
+
+            // Get the last date of the previous month
+            let monthlastdate = new Date(year, month, 0).getDate();
+
+            // Variable to store the generated calendar HTML
+            let lit = "";
+
+            // Loop to add the last dates of the previous month
+            for (let i = dayone; i > 0; i--) {
+                lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
+            }
+
+            // Loop to add the dates of the current month
+            for (let i = 1; i <= lastdate; i++) {
+
+                // Check if the current date is today
+                let isToday = i === date.getDate()
+                    && month === new Date().getMonth()
+                    && year === new Date().getFullYear()
+                    ? "active"
+                    : "";
+                lit += `<li class="${isToday}">${i}</li>`;
+            }
+
+            // Loop to add the first dates of the next month
+            for (let i = dayend; i < 6; i++) {
+                lit += `<li class="inactive">${i - dayend + 1}</li>`;
+            }
+
+            // Update the text of the current date element with the formatted current month and year
+            currdate.innerText = `${months[month]} ${year}`;
+
+            // Update the HTML of the dates element with the generated calendar
+            day.innerHTML = lit;
+
+            // Add click event to each date
+            addDateClickEvent();
+        }
+
+        // Function to add click event to each date
+        const addDateClickEvent = () => {
+            const dates = document.querySelectorAll(".calendar-dates li:not(.inactive)");
+            dates.forEach(dateEl => {
+                dateEl.addEventListener("click", () => {
+                    $('.calender-section').hide(200);
+                    $("#dateSelect").hide();
+                    $("#slotSelect").show()
+                    $(".date-time-box").show()
+                });
+            });
+        }
+
+        manipulate();
+
+        // Attach a click event listener to each icon
+        prenexIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+
+                // Check if the icon is "calendar-prev" or "calendar-next"
+                month = icon.id === "calendar-prev" ? month - 1 : month + 1;
+
+                // Check if the month is out of range
+                if (month < 0 || month > 11) {
+
+                    // Set the date to the first day of the month with the new year
+                    date = new Date(year, month, new Date().getDate());
+
+                    // Set the year to the new year
+                    year = date.getFullYear();
+
+                    // Set the month to the new month
+                    month = date.getMonth();
+                } else {
+                    // Set the date to the current date
+                    date = new Date();
+                }
+
+                // Call the manipulate function to update the calendar display
+                manipulate();
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".list-li button").click(function () {
+                // Remove the 'active' class from all list items
+                $(".list-li").removeClass("active");
+                // Add the 'active' class to the parent `<li>` of the clicked button
+                $(this).parent().toggleClass("active");
+            });
+            $("#slotSelect").click(function () {
+                $('.calender-section').show(200);
+                $("#dateSelect").show();
+                $("#slotSelect").hide()
+                $(".date-time-box").hide()
+            })
+        });
+    </script>
+    <script>
+        const inputs = document.querySelectorAll('.otp-input input');
+        const timerDisplay = document.getElementById('timer');
+        const resendLink = document.querySelector('.resend-link');
+        let timeLeft = 120; // 2 minutes in seconds
+        let timerId;
+        let canResend = true;
+
+        function startTimer() {
+            resendLink.style.display = 'none'; // Hide resend link when timer starts
+            canResend = true; // Allow resend only after timer finishes
+
+            timerId = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timerId);
+                    timerDisplay.textContent = "Code expired";
+                    timerDisplay.classList.add('expired');
+                    inputs.forEach(input => input.disabled = true);
+                    resendLink.style.display = 'inline'; // Show resend link when timer finishes
+                    canResend = true;
+                } else {
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timerDisplay.textContent = `(${minutes}:${seconds.toString().padStart(2, '0')})`;
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+
+        function resendOTP() {
+            if (canResend) {
+                alert("New OTP sent!");
+                timeLeft = 120;
+                inputs.forEach(input => {
+                    input.value = '';
+                    input.disabled = false;
+                });
+                inputs[0].focus();
+                clearInterval(timerId);
+                timerDisplay.classList.remove('expired');
+                startTimer();
+            } else {
+                alert("Cannot resend code. Time has expired.");
+            }
+        }
+
+        inputs.forEach((input, index) => {
+            // Handle typing
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length > 1) {
+                    e.target.value = e.target.value.slice(0, 1);
+                }
+                if (e.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+
+            // Handle backspacing
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && !e.target.value && index > 0) {
+                    inputs[index - 1].focus();
+                }
+                if (e.key === 'e') {
+                    e.preventDefault();
+                }
+            });
+
+            // Handle pasting
+            input.addEventListener('paste', (e) => {
+                e.preventDefault();
+                const pasteData = e.clipboardData.getData('text');
+                if (pasteData.length === inputs.length) {
+                    inputs.forEach((input, idx) => input.value = pasteData[idx] || '');
+                    inputs[inputs.length - 1].focus(); // Move focus to the last input after pasting
+                }
+            });
+        });
+
+        function verifyOTP() {
+            const otp = Array.from(inputs).map(input => input.value).join('');
+            if (otp.length === 6) {
+                if (timeLeft > 0) {
+                    alert(`Verifying OTP: ${otp}`);
+                } else {
+                    alert('OTP has expired. Please request a new one.');
+                }
+            } else {
+                alert('Please enter a 6-digit OTP');
+            }
+        }
+
+        startTimer();
+
+
+    </script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

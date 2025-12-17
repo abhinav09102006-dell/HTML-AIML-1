@@ -13,6 +13,7 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
@@ -521,6 +522,9 @@
                 </div>
             </div>
             <div class="right-section">
+                <a href="#" class="search_icon_mobile">
+                    <span><i class="fa-magnifying-glass fa-solid"></i></span>
+                </a>
                 <a href="#" class="cart-icon">
                     <i class="fa-heart fa-solid"></i>
                     <span>0</span>
@@ -533,10 +537,6 @@
                     <i class="fa-ellipsis-vertical fa-solid"></i>
                 </button> -->
             </div>
-        </div>
-        <div class="search-input-header">
-            <span><i class="fa-magnifying-glass fa-solid"></i></span>
-            <input type="text" placeholder="Search 5000+ flowers, cakes, gifts etc">
         </div>
         <div class="mobile-menu">
             <div class="mobile-menu-card">
@@ -552,13 +552,13 @@
                 </div>
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link" href="cake-page.html">
-                            Cakes
+                        <a class="nav-link" href="product-page.html">
+                            Flowers
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="product-page.html">
-                            Flowers
+                        <a class="nav-link" href="cake-page.html">
+                            Cakes
                         </a>
                     </li>
                     <li class="nav-item">
@@ -637,958 +637,295 @@
         </div>
     </header>
 
-    <div class="pin-code-box" id="select_location_btn">
-        <button>
-            <img src="images/world.png" class="flage" alt="menu" />
-            <span>IND</span>
-        </button>
-        <div class="pick-loction">
-            <i class="fa-map-marker-alt fas"></i>
-            Select Delivery Location
-        </div>
-    </div>
 
-
-    <div class="category-section">
-        <div class="main-menu">
-            <nav class="category-list navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                        <ul class="m-auto mb-2 mb-lg-0 navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="cake-page.html">
-                                    <img src="images/cake-menu.jpg" class="shadow" alt="menu" />
-                                    Cakes
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product-page.html">
-                                    <img src="images/flowers-menu.jpg" class="shadow" alt="menu" />
-                                    Flowers
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="combos.html">
-                                    <img src="images/combos.jpg" class="shadow" alt="menu" />
-                                    Combos
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gift.html">
-                                    <img src="images/gifts-menu.jpg" class="shadow" alt="menu" />
-                                    Gifts
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="birthday-dress.html">
-                                    <img src="images/t-shurt.jpg" class="shadow" alt="menu" />
-                                    Birthday Dress
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/birthday-decoration.jpg" class="shadow" alt="menu" />
-                                    Birthday Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/anniversary-decoration.jpg" class="shadow" alt="menu" />
-                                    Anniversary Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/plan-your-even.jpg" class="shadow" alt="menu" />
-                                    Plan Your Event
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <section class="mb-2 banner">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="active carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/cake-banner.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-1.jpg" class="w-100" alt="banner" /></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/banner-2.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-2.jpg" class="w-100" alt="banner" /></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/banner-3.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-3.jpg" class="w-100" alt="banner" /></a>
+    <section class="service-section">
+        <div class="container-fluid px-5">
+            <div class="tab-section">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'db')" id="defaultOpen">Birthday
+                        Decoration</button>
+                    <button class="tablinks" onclick="openCity(event, 'wedding')">Wedding</button>
+                    <button class="tablinks" onclick="openCity(event, 'cp')">Corporate</button>
+                    <button class="tablinks" onclick="openCity(event, 'ad')">Anniversary Decoration</button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"><i class="fas fa-chevron-left"></i></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon"><i class="fas fa-chevron-right"></i></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
 
-    <div class="banner-bottom-menu">
-        <div class="main-menu">
-            <nav class="category-list navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid px-5">
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                        <ul class="m-auto mb-2 mb-lg-0 navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="cake-page.html">
-                                    <img src="images/cake-menu.jpg" class="shadow" alt="menu" />
-                                    Cakes
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product-page.html">
-                                    <img src="images/flowers-menu.jpg" class="shadow" alt="menu" />
-                                    Flowers
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="combos.html">
-                                    <img src="images/combos.jpg" class="shadow" alt="menu" />
-                                    Combos
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gift.html">
-                                    <img src="images/gifts-menu.jpg" class="shadow" alt="menu" />
-                                    Gifts
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="birthday-dress.html">
-                                    <img src="images/t-shurt.jpg" class="shadow" alt="menu" />
-                                    Birthday Dress
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/birthday-decoration.jpg" class="shadow" alt="menu" />
-                                    Birthday Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/anniversary-decoration.jpg" class="shadow" alt="menu" />
-                                    Anniversary Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/plan-your-even.jpg" class="shadow" alt="menu" />
-                                    Plan Your Event
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <section class="discount-banner mt-4">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="#" class="desktop-view"><img src="images/amazing-discount.jpg" class="w-100" alt="discount-banner"></a>
-                    <a href="#" class="mob-view"><img src="images/mobile-dicount.png" class="w-100" alt="discount-banner"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-2 services services_list_home_page">
-        <div class="container-fluid px-5">
-            <div class="">
-                <div class="bestseller-bg">
-                    <div class="row">
-                        <div class="col-6 col-lg-6">
-                            <h4 class="common-heading">Bestsellers</h4>
-                        </div>
-                        <div class="text-end col-6 col-lg-6">
-                            <a href="#" class="heading-btn">View All</a>
-                        </div>
-                        <div class="mb-2 col-md-12">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/cake-1.jpg" class="w-100" alt="cake" /></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p class="text-limit" data-maxlength="20"><a href="#">Cake</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
+            <div id="db" class="tabcontent">
+                
+                <div class="event-slider-section">
+                    <div class="mySwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/cake-event-1.jpg" alt="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/best-flower.jpg" class="w-100" alt="flower-6"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p class="text-limit" data-maxlength="20"><a href="flowers-details.html">Flower</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/cake-event-2.jpg" alt="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/combo-1.jpg" class="w-100" alt="Combo"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p><a href="flowers-details.html">Combo</a></p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="gift-details.html"><img src="images/gift-1.jpg" class="w-100" alt="Gift"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p><a href="flowers-details.html">Gift</a></p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/cake-event-3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a class="galler_view" href="gallery.html">View Our Work <i class="fa-arrow-right fa-solid"></i></a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="fresh-flowers">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Occassions</h4>
+                <div class="event-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id quae doloremque, esse debitis
+                        nisi itaque omnis. Obcaecati architecto similique iure sapiente officia, repellat error,
+                        nesciunt, quos reprehenderit laborum asperiores!</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
                 </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/birthdayt-cake.jpg"
-                                    class="w-100" alt="birthdayt-cake" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Birthday</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/anniversary-img.jpg"
-                                    class="w-100" alt="anniversary-img" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Anniversary</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/congrate.jpg" class="w-100"
-                                    alt="congrate" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Congratulations</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/thank-you.jpg" class="w-100"
-                                    alt="thank-you" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Thank You</a></label>
-                        </div>
-                    </div>
+                <div class="call-to-action">
+                    <button data-bs-toggle="modal" data-bs-target="#formPopup">Request a callback</button>
+                    <a href="contact-us.html">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="discount-banner mt-4">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="payBanner" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a href="#" class="desktop-view"><img src="images/phonepe.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                          <a href="#" class="mob-view"><img src="images/phonepe-mob.jpg" class="w-100" alt="banner" /></a>
+            <div id="ad" class="tabcontent">
+                <div class="event-slider-section">
+                    <div class="mySwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-3.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                         <a href="#" class="desktop-view"><img src="images/mobik.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                         <a href="#" class="mob-view"><img src="images/mobik-mob.jpg" class="w-100" alt="banner" /></a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="#" class="desktop-view"><img src="images/paytm.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                          <a href="#" class="mob-view"><img src="images/paytm-mob.jpg" class="w-100" alt="banner" /></a>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#payBanner" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"><i class="fas fa-chevron-left"></i></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#payBanner" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"><i class="fas fa-chevron-right"></i></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
                     </div>
+                    <a class="galler_view" href="gallery.html">View Our Work <i class="fa-arrow-right fa-solid"></i></a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Cakes</h4>
+                <div class="event-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id quae doloremque, esse debitis
+                        nisi itaque omnis. Obcaecati architecto similique iure sapiente officia, repellat error,
+                        nesciunt, quos reprehenderit laborum asperiores!</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
                 </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-1.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-2.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-3.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-4.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="call-to-action">
+                    <button data-bs-toggle="modal" data-bs-target="#formPopup">Request a callback</button>
+                    <a href="contact-us.html">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="fresh-flowers">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Flowers</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="flowers.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/flower-6.jpg" class="w-100"
-                                    alt="flower-6" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
+            <div id="wedding" class="tabcontent">
+                <div class="event-slider-section">
+                    <div class="mySwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/wedding-event-3.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a class="galler_view" href="gallery.html">View Our Work <i class="fa-arrow-right fa-solid"></i></a>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="birthday-d" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/flower-7.jpg" class="w-100"
-                                    alt="flower-7" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="birthday-d" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Combos</h4>
+                <div class="event-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id quae doloremque, esse debitis
+                        nisi itaque omnis. Obcaecati architecto similique iure sapiente officia, repellat error,
+                        nesciunt, quos reprehenderit laborum asperiores!</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
                 </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-1.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-2.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-3.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-4.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="call-to-action">
+                    <button data-bs-toggle="modal" data-bs-target="#formPopup">Request a callback</button>
+                    <a href="contact-us.html">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div id="pye" class="tabcontent">
+                <div class="event-slider-section">
+                    <div class="mySwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="galler_view" href="gallery.html">View Our Work <i class="fa-arrow-right fa-solid"></i></a>
+                </div>
 
-    <section class="gift-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Gifts</h4>
+                <div class="event-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id quae doloremque, esse debitis
+                        nisi itaque omnis. Obcaecati architecto similique iure sapiente officia, repellat error,
+                        nesciunt, quos reprehenderit laborum asperiores!</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
                 </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="gift.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-1.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-2.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-3.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-4.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="call-to-action">
+                    <button data-bs-toggle="modal" data-bs-target="#formPopup">Request a callback</button>
+                    <a href="contact-us.html">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div id="cp" class="tabcontent">
+                <div class="event-slider-section">
+                    <div class="mySwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="images/corporate-event-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="galler_view" href="gallery.html">View Our Work <i class="fa-arrow-right fa-solid"></i></a>
+                </div>
 
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Birthday Dress</h4>
+                <div class="event-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id quae doloremque, esse debitis
+                        nisi itaque omnis. Obcaecati architecto similique iure sapiente officia, repellat error,
+                        nesciunt, quos reprehenderit laborum asperiores!</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae placeat autem enim
+                        exercitationem laborum ipsum, rerum non consequatur vel quidem? Iure hic perferendis iusto
+                        laudantium enim! Non, distinctio repellendus.</p>
+                    <h4>A wide variety of wedding themes only for you!</h4>
                 </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-1.jpg" class="w-100"
-                                    alt="t-shart-1" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-2.jpg" class="w-100"
-                                    alt="t-shart-2" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-3.jpg" class="w-100"
-                                    alt="t-shart-3" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-4.jpg" class="w-100"
-                                    alt="t-shart-4" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Birthday Decoration</h4>
-                </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="birthday-decoration.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-1.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-2.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-3.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-4.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Anniversary Decoration</h4>
-                </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-1.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-2.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-3.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-4.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="locationPopup" class="popup-modal">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
-            <h2>Let's Personalize Your Experience!</h2>
-            <p>
-                Find the perfect gifts for you or your loved ones — it's like magic!
-            </p>
-            <!-- Radio buttons for India/Outside India -->
-            <div class="radio-options">
-                <label>
-                    <input type="radio" name="location" value="india" checked /> Within
-                    India
-                </label>
-                <label>
-                    <input type="radio" name="location" value="outside" /> Outside India
-                </label>
-            </div>
-            <!-- Input field for location or pincode -->
-            <div class="input-container">
-                <i class="fa-map-marker-alt fas"></i>
-                <input type="text" id="pincode" placeholder="* Enter delivery location or pincode" />
-            </div>
-            <!-- Button for Continue Shopping -->
-            <button type="submit" class="submit-btn">CONTINUE SHOPPING</button>
-        </div>
-    </div>
-
-
-    <section class="service-img-1 mt-5 mb-4">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="#"><img src="images/service-banner-1.jpg" class="w-100" alt="service-banner"></a>
+                <div class="call-to-action">
+                    <button data-bs-toggle="modal" data-bs-target="#formPopup">Request a callback</button>
+                    <a href="contact-us.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -1988,91 +1325,57 @@
             <img src="images/whatapp.png" alt="whatapp">
         </a>
     </div>
-
-
     <!-- Modal -->
-    <div class="fade modal" id="select_locatin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="fade modal request_a_callback" id="formPopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="fs-5 modal-title" id="exampleModalLabel">Select Delivery Location</h5>
+                    <h5 class="modal-title">Request a Callback</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="locatin-box-1">
-                        <p>Select a delivery location to see product availability</p>
-                        <form>
-                            <input type="text" name="" id="" placeholder="Enter pincode">
-                            <button>Check</button>
-                        </form>
-                        <button class="dedect_location"><i class="fa-location-crosshairs fa-solid"></i> Detect my
-                            location
-                        </button>
-                    </div>
+                <div class="popup-form modal-body">
+                    <form class="request-form">
+                        <div class="input_form">
+                            <input type="text" class="form-control" id="" placeholder="Name">
+                        </div>
+                        <div class="input_form">
+                            <input type="text" class="form-control" id="" placeholder="Mobile">
+                        </div>
+                        <div class="input_form">
+                            <input type="email" class="form-control" id="" placeholder="Email">
+                        </div>
+                        <div class="input_form">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="0" selected="">Budget</option>
+                                <option value="5 - 10 Lacs">5 - 10 Lacs</option>
+                                <option value="10 - 15 Lacs">10 - 15 Lacs</option>
+                                <option value="15 - 25 Lacs">15 - 25 Lacs</option>
+                                <option value="25 - 50 Lacs">25 - 50 Lacs</option>
+                                <option value="More than 50 Lacs">More than 50 Lacs</option>
+                            </select>
+                        </div>
+                        <div class="input_form">
+                            <input type="text" class="form-control" id="" placeholder="Event Type">
+                        </div>
+                        <div class="input_form">
+                            <input type="date" class="form-control" id="" placeholder="Date">
+                        </div>
+                        <div class="input_form">
+                            <input type="text" class="form-control" id="" placeholder="Location">
+                        </div>
+                        <div class="input_form">
+                            <textarea class="form-control" id="" rows="2" placeholder="Message"></textarea>
+                        </div>
+                        <button>SUBMIT</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="location_bottom_sheet">
-        <button class="close_btn_b"><i class="fa-solid fa-xmark"></i></button>
-        <div class="locatin-box-1">
-            <p>Select a delivery location to see product availability</p>
-            <form>
-                <input type="text" name="" id="" placeholder="Enter pincode">
-                <button>Check</button>
-            </form>
-            <button class="dedect_location"><i class="fa-location-crosshairs fa-solid"></i> Detect my
-                location
-            </button>
-        </div>
-    </div>
 
-    <div class="text-us-bar d-lg-none dis-mobile">
-        <span class="text-us tex-bor">
-            <a href="index.html" class="mx-3 tst"><i class="fa-home fas"></i>
-                <p>Home</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="categories.html" class="mx-1 tst"><i class="fa-list fas"></i>
-                <p>Categories</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="app.html" class="mx-3 tst"><i class="fa-layer-group fas"></i>
-                <p>Apps</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="orders.html" class="mx-3 tst"><i class="fa-shopping-cart fas"></i>
-                <p>Orders</p>
-            </a>
-        </span>
-        <span class="text-us tst">
-            <a href="contact-us.html" class="mx-2 tst"><i class="fa-user-plus fas"></i>
-                <p>Contact</p>
-            </a>
-        </span>
-        <style>
-            .tst {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .dis-mobile {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 1px;
-            }
-
-            .a tst p {
-                color: #000 !important;
-            }
-        </style>
-    </div>
     <!-- jQuery and Owl Carousel Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Custom JS for Carousel -->
@@ -2083,17 +1386,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
-    <script>
-        document.querySelector(".toggl").addEventListener("click", function () {
-            const menu = document.querySelector(".nav-menu");
-            // Toggle between showing and hiding the menu
-            if (menu.style.display === "none" || menu.style.display === "") {
-                menu.style.display = "block"; // Show the menu
-            } else {
-                menu.style.display = "none"; // Hide the menu
-            }
-        });
-    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         $(document).ready(function () {
             // Open menu on bar-btn click
@@ -2109,21 +1404,40 @@
 
     </script>
     <script>
-        $(document).ready(function () {
-            $(".cart-icon").mouseenter(function () {
-                $(".web-cart").addClass("active");
-            });
-            $('.cart_close').click(function () {
-                $(".web-cart").removeClass("active");
-            });
-            $("#select_location_btn").click(function () {
-                $(".location_bottom_sheet").addClass("active");
-            });
-            $('.close_btn_b').click(function () {
-                $(".location_bottom_sheet").removeClass("active");
-            });
-        });
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
     <script>
         $(window).on("scroll", function () {

@@ -17,7 +17,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <title>Bdayfy</title>
+    <title>Product Page | Bdayfy</title>
 </head>
 
 <body>
@@ -521,6 +521,9 @@
                 </div>
             </div>
             <div class="right-section">
+                <a href="javascript:void(0)" class="search_icon_mobile">
+                    <span><i class="fa-magnifying-glass fa-solid"></i></span>
+                </a>
                 <a href="#" class="cart-icon">
                     <i class="fa-heart fa-solid"></i>
                     <span>0</span>
@@ -533,10 +536,6 @@
                     <i class="fa-ellipsis-vertical fa-solid"></i>
                 </button> -->
             </div>
-        </div>
-        <div class="search-input-header">
-            <span><i class="fa-magnifying-glass fa-solid"></i></span>
-            <input type="text" placeholder="Search 5000+ flowers, cakes, gifts etc">
         </div>
         <div class="mobile-menu">
             <div class="mobile-menu-card">
@@ -552,13 +551,13 @@
                 </div>
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link" href="cake-page.html">
-                            Cakes
+                        <a class="nav-link" href="product-page.html">
+                            Flowers
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="product-page.html">
-                            Flowers
+                        <a class="nav-link" href="cake-page.html">
+                            Cakes
                         </a>
                     </li>
                     <li class="nav-item">
@@ -635,9 +634,25 @@
                 </div>
             </div>
         </div>
+        <div class="search-modal-right">
+            <button class="close_btn_search"><i class="fa-solid fa-xmark"></i></button>
+            <form action="">
+                <input type="text" placeholder="Search by category">
+                <button class="search">Search</button>
+            </form>
+            <ul>
+                <li>Flowers</li>
+                <li>Cakes</li>
+                <li>Combos</li>
+                <li>Gifts</li>
+                <li>Birthday Dress</li>
+                <li>Birthday Decoration</li>
+                <li>Anniversary Decoration</li>
+            </ul>
+        </div>
     </header>
 
-    <div class="pin-code-box" id="select_location_btn">
+    <div class="pin-code-box">
         <button>
             <img src="images/world.png" class="flage" alt="menu" />
             <span>IND</span>
@@ -648,533 +663,465 @@
         </div>
     </div>
 
+    <div class="inner-category-section">
+        <div class="container-fluid px-5">
+            <ul class="">
+                <li>
+                    <a href="product-page.html">Decoration</a>
+                </li>
+                <li>
+                    <a href="#">Combos</a>
+                </li>
+                <li>
+                    <a href="#">Gifts</a>
+                </li>
+                <li>
+                    <a href="#">Anniversary</a>
+                </li>
+                <li>
+                    <a href="#">Birthday</a>
+                </li>
+                <li>
+                    <a href="#">Cake</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <div class="category-section">
-        <div class="main-menu">
-            <nav class="category-list navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                        <ul class="m-auto mb-2 mb-lg-0 navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="cake-page.html">
-                                    <img src="images/cake-menu.jpg" class="shadow" alt="menu" />
-                                    Cakes
-                                </a>
+    <section class="mt-5 breadcrumb-section p-l-r">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Flowers</a></li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="filter-section-layout">
+        <div class="container-fluid px-5">
+            <div class="filter-gray-bg">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="left-section ps-3">
+                        <h5>Flowers <span>(341 items)</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="right-section">
+                        <ul>
+                            <li>
+                                <span>
+                                    <i class="fa-calendar-days fa-solid"></i>
+                                </span>
+                                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="filter-button">
+                                    <p>Delivery Date</p>
+                                    <h6>Select Delivery Date</h6>
+                                </button>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product-page.html">
-                                    <img src="images/flowers-menu.jpg" class="shadow" alt="menu" />
-                                    Flowers
-                                </a>
+                            <li>
+                                <span>
+                                    <i class="fa-indian-rupee-sign fa-solid"></i>
+                                </span>
+                                <div class="filter-button">
+                                    <p>Filter By Price</p>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>All Products</option>
+                                        <option value="1">499 and Below</option>
+                                        <option value="2">500 - 999</option>
+                                        <option value="3">1000 - 1499</option>
+                                        <option value="3">1500 - 2499</option>
+                                        <option value="3">2500 and Above</option>
+                                    </select>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="combos.html">
-                                    <img src="images/combos.jpg" class="shadow" alt="menu" />
-                                    Combos
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gift.html">
-                                    <img src="images/gifts-menu.jpg" class="shadow" alt="menu" />
-                                    Gifts
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="birthday-dress.html">
-                                    <img src="images/t-shurt.jpg" class="shadow" alt="menu" />
-                                    Birthday Dress
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/birthday-decoration.jpg" class="shadow" alt="menu" />
-                                    Birthday Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/anniversary-decoration.jpg" class="shadow" alt="menu" />
-                                    Anniversary Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/plan-your-even.jpg" class="shadow" alt="menu" />
-                                    Plan Your Event
-                                </a>
+                            <li>
+                                <span>
+                                    <i class="fa-arrow-up-9-1 fa-solid"></i>
+                                </span>
+                                <div class="filter-button">
+                                    <p> Sort By</p>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Popularity </option>
+                                        <option value="2">Price - Low To High </option>
+                                        <option value="3">Price - High To Low </option>
+                                        <option value="3">Best Seller </option>
+                                        <option value="3">Premium</option>
+                                        <option value="3">Trending</option>
+                                    </select>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
+              </div>
+            </div>
         </div>
     </div>
 
-    <section class="mb-2 banner">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="active carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/cake-banner.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-1.jpg" class="w-100" alt="banner" /></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/banner-2.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-2.jpg" class="w-100" alt="banner" /></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <a href="#" class="desktop-view"><img src="images/banner-3.jpg" class="w-100" alt="banner" /></a>
-                    <a href="#" class="mob-view"><img src="images/mob-banner-3.jpg" class="w-100" alt="banner" /></a>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"><i class="fas fa-chevron-left"></i></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon"><i class="fas fa-chevron-right"></i></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-
-    <div class="banner-bottom-menu">
-        <div class="main-menu">
-            <nav class="category-list navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid px-5">
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                        <ul class="m-auto mb-2 mb-lg-0 navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="cake-page.html">
-                                    <img src="images/cake-menu.jpg" class="shadow" alt="menu" />
-                                    Cakes
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product-page.html">
-                                    <img src="images/flowers-menu.jpg" class="shadow" alt="menu" />
-                                    Flowers
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="combos.html">
-                                    <img src="images/combos.jpg" class="shadow" alt="menu" />
-                                    Combos
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gift.html">
-                                    <img src="images/gifts-menu.jpg" class="shadow" alt="menu" />
-                                    Gifts
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="birthday-dress.html">
-                                    <img src="images/t-shurt.jpg" class="shadow" alt="menu" />
-                                    Birthday Dress
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/birthday-decoration.jpg" class="shadow" alt="menu" />
-                                    Birthday Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/anniversary-decoration.jpg" class="shadow" alt="menu" />
-                                    Anniversary Decoration
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="plan-your-event.html">
-                                    <img src="images/plan-your-even.jpg" class="shadow" alt="menu" />
-                                    Plan Your Event
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <section class="discount-banner mt-4">
+    <section class="products-view-all fresh-flowers inner-cat-page">
         <div class="container-fluid px-5">
             <div class="row">
-                <div class="col-md-12">
-                    <a href="#" class="desktop-view"><img src="images/amazing-discount.jpg" class="w-100" alt="discount-banner"></a>
-                    <a href="#" class="mob-view"><img src="images/mobile-dicount.png" class="w-100" alt="discount-banner"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-2 services services_list_home_page">
-        <div class="container-fluid px-5">
-            <div class="">
-                <div class="bestseller-bg">
-                    <div class="row">
-                        <div class="col-6 col-lg-6">
-                            <h4 class="common-heading">Bestsellers</h4>
-                        </div>
-                        <div class="text-end col-6 col-lg-6">
-                            <a href="#" class="heading-btn">View All</a>
-                        </div>
-                        <div class="mb-2 col-md-12">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/cake-1.jpg" class="w-100" alt="cake" /></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p class="text-limit" data-maxlength="20"><a href="#">Cake</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/best-flower.jpg" class="w-100" alt="flower-6"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p class="text-limit" data-maxlength="20"><a href="flowers-details.html">Flower</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="flowers-details.html"><img src="images/combo-1.jpg" class="w-100" alt="Combo"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p><a href="flowers-details.html">Combo</a></p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 col-6 col-lg-3">
-                            <div class="shadow h-100 service-box">
-                                <div class="img-box">
-                                    <a href="gift-details.html"><img src="images/gift-1.jpg" class="w-100" alt="Gift"></a>
-                                </div>
-                                <div class="p-2 service-text">
-                                    <p><a href="flowers-details.html">Gift</a></p>
-                                    <div class="d-flex justify-content-between">
-                                        <label class="text-product">
-                                            <span class="text-dark"> ₹649</span>
-                                            <span class="text-lightpink line-through">₹699</span>
-                                            <span class="green-text">7% OFF</span>
-                                        </label>
-                                        <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="fresh-flowers">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Occassions</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/birthdayt-cake.jpg"
-                                    class="w-100" alt="birthdayt-cake" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Birthday</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/anniversary-img.jpg"
-                                    class="w-100" alt="anniversary-img" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Anniversary</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/congrate.jpg" class="w-100"
-                                    alt="congrate" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Congratulations</a></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="birthday-decoration-details.html"><img src="images/thank-you.jpg" class="w-100"
-                                    alt="thank-you" /></a>
-                        </div>
-                        <div class="p-2 text-center service-text">
-                            <label><a href="birthday-decoration-details.html">Thank You</a></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="discount-banner mt-4">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="payBanner" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a href="#" class="desktop-view"><img src="images/phonepe.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                          <a href="#" class="mob-view"><img src="images/phonepe-mob.jpg" class="w-100" alt="banner" /></a>
-                        </div>
-                        <div class="carousel-item">
-                         <a href="#" class="desktop-view"><img src="images/mobik.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                         <a href="#" class="mob-view"><img src="images/mobik-mob.jpg" class="w-100" alt="banner" /></a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="#" class="desktop-view"><img src="images/paytm.jpg" class="w-100 rounded" alt="discount-banner"></a>
-                          <a href="#" class="mob-view"><img src="images/paytm-mob.jpg" class="w-100" alt="banner" /></a>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#payBanner" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"><i class="fas fa-chevron-left"></i></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#payBanner" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"><i class="fas fa-chevron-right"></i></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Cakes</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-1.jpg" class="w-100" alt="cake" /></a>
+                            <a href="flowers-details.html"><img src="images/flower-6.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <span>BEST SELLER</span>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-2.jpg" class="w-100" alt="cake" /></a>
+                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="flower-6" /></a>
+                            <button>
+                                <img src="images/cake/heart.png" alt="">
+                            </button>
+                            <span>BEST SELLER</span>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-3.jpg" class="w-100" alt="cake" /></a>
+                            <a href="flowers-details.html"><img src="images/flower-7.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <span>BEST SELLER</span>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/cake-4.jpg" class="w-100" alt="cake" /></a>
+                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="flower-6" /></a>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Cake</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="fresh-flowers">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Flowers</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="flowers.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
                             <a href="flowers-details.html"><img src="images/flower-6.jpg" class="w-100"
                                     alt="flower-6" /></a>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="birthday-d" /></a>
+                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="flower-6" /></a>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
                             <a href="flowers-details.html"><img src="images/flower-7.jpg" class="w-100"
-                                    alt="flower-7" /></a>
+                                    alt="flower-6" /></a>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
                         <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="birthday-d" /></a>
+                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="flower-6" /></a>
                         </div>
                         <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Fresh Flower</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/flower-6.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/flower-7.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/flower-6.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/2.jpg" class="w-100" alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/flower-7.jpg" class="w-100"
+                                    alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-6 col-lg-3 col-md-6">
+                    <div class="h-100 service-box">
+                        <div class="img-box">
+                            <a href="flowers-details.html"><img src="images/4.jpg" class="w-100" alt="flower-6" /></a>
+                        </div>
+                        <div class="p-2 service-text">
+                            <p class="text-limit" data-maxlength="20"><a href="#">Mixed Roses Romantic Flower
+                                    Bunch</a>
+                                <i class="fa-circle-info fa-solid"></i>
+                            </p>
+                            <label class="text-product">
+                                <span class="text-dark"> ₹649</span>
+                                <span class="text-lightpink line-through">₹699</span>
+                                <span class="green-text">7% OFF</span>
+                            </label>
+                            <p class="mt-1 mb-0 rating-reviews"><span class="raiting">4.4 <i
+                                        class="fa-solid fa-star-half-stroke"></i></span> <span class="small-text">4332
+                                    Reviews</span></p>
                         </div>
                     </div>
                 </div>
@@ -1182,379 +1129,6 @@
         </div>
     </section>
 
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Combos</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-1.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-2.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-3.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/combo-4.jpg" class="w-100"
-                                    alt="Combo" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Combo Gift</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="gift-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h4 class="common-heading">Gifts</h4>
-                </div>
-                <div class="text-end col-6 col-lg-6">
-                    <a href="gift.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-1.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-2.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-3.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="gift-details.html"><img src="images/gift-4.jpg" class="w-100" alt="Gift" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Gift Item</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Birthday Dress</h4>
-                </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-1.jpg" class="w-100"
-                                    alt="t-shart-1" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-2.jpg" class="w-100"
-                                    alt="t-shart-2" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-3.jpg" class="w-100"
-                                    alt="t-shart-3" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box">
-                            <a href="flowers-details.html"><img src="images/t-shart-4.jpg" class="w-100"
-                                    alt="t-shart-4" /></a>
-                        </div>
-                        <div class="p-2 service-text">
-                            <p><a href="flowers-details.html">Birthday Dress</a></p>
-                            <div class="d-flex justify-content-between">
-                                <label class="text-product">
-                                    <span class="text-dark"> ₹649</span>
-                                    <span class="text-lightpink line-through">₹699</span>
-                                    <span class="green-text">7% OFF</span>
-                                </label>
-                                <p class="rating-reviews"><span class="raiting">4.4 <i class="fa-solid fa-star-half-stroke"></i></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Birthday Decoration</h4>
-                </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="birthday-decoration.html" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-1.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-2.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-3.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/bday-4.jpg" class="w-100"
-                                    alt="Bday-D" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cakes-area">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-8 col-lg-6">
-                    <h4 class="common-heading">Anniversary Decoration</h4>
-                </div>
-                <div class="text-end col-4 col-lg-6">
-                    <a href="#" class="heading-btn">View All</a>
-                </div>
-                <div class="mb-2 col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-1.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-2.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-3.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 col-6 col-lg-3">
-                    <div class="shadow h-100 service-box">
-                        <div class="img-box bottom-rounded">
-                            <a href="flowers-details.html"><img src="images/anniversary-4.jpg" class="w-100" alt="cake" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div id="locationPopup" class="popup-modal">
         <div class="popup-content">
@@ -1583,16 +1157,6 @@
         </div>
     </div>
 
-
-    <section class="service-img-1 mt-5 mb-4">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="#"><img src="images/service-banner-1.jpg" class="w-100" alt="service-banner"></a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="footer-content">
         <div class="container-fluid px-5">
@@ -1989,90 +1553,90 @@
         </a>
     </div>
 
-
-    <!-- Modal -->
-    <div class="fade modal" id="select_locatin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="fs-5 modal-title" id="exampleModalLabel">Select Delivery Location</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="locatin-box-1">
-                        <p>Select a delivery location to see product availability</p>
-                        <form>
-                            <input type="text" name="" id="" placeholder="Enter pincode">
-                            <button>Check</button>
-                        </form>
-                        <button class="dedect_location"><i class="fa-location-crosshairs fa-solid"></i> Detect my
-                            location
-                        </button>
+    <div class="product-mob-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-title">
+                        <h4>Mixed Roses Romantic Flower Bunch</h4>
+                        <a href="#"><i class="fa-times fas"></i></a>
                     </div>
+                    <p><span class="small-text">4332 Reviews</span></p>
+                    <p>
+                        <label class="text-product">
+                            <span class="text-dark"> ₹649</span>
+                            <span class="text-lightpink line-through">₹699</span>
+                            <span class="green-text">7% OFF</span>
+                        </label>
+                    </p>
+                    <ul class="common-list">
+                        <li>6 Purple Orchids</li>
+                        <li>Green Murraya Leaf Filler</li>
+                        <li>BdayFy Baby Pink Non Woven Packing Sheet</li>
+                        <li>Pink Color Non Woven Wrapping Paper</li>
+                        <li>Beautifully Tied with FNP Branded Ribbon</li>
+                        <li>Net Quantity: 1 Bouquet</li>
+                        <li>Dimensions: 24x15 inch</li>
+                    </ul>
+                    <p>
+                        <a href="#" class="w-100 orange-btn">Continue</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="location_bottom_sheet">
-        <button class="close_btn_b"><i class="fa-solid fa-xmark"></i></button>
-        <div class="locatin-box-1">
-            <p>Select a delivery location to see product availability</p>
-            <form>
-                <input type="text" name="" id="" placeholder="Enter pincode">
-                <button>Check</button>
-            </form>
-            <button class="dedect_location"><i class="fa-location-crosshairs fa-solid"></i> Detect my
-                location
-            </button>
+
+
+    <div class="cat-filter-section-mobile">
+        <div class="filter-box-one">
+            <div class="filter-header">
+                <h5 class="back-filter"><img src="images/cake/arrow.png" alt=""> Filter</h5>
+                <button>Clear All</button>
+            </div>
+            <div class="filter-option">
+                <div class="left-section">
+                    <ul>
+                        <li><button class="active">Price</button></li>
+                        <li><button>Flavour</button></li>
+                        <li><button>Cake Type</button></li>
+                    </ul>
+                </div>
+                <div class="right-section">
+                    <ul>
+                        <li><input type="checkbox" id="price"><label for="price">₹ 0 To ₹ 499 (10)</label></li>
+                        <li><input type="checkbox" id="price"><label for="price">₹ 500 To ₹ 999 (100)</label></li>
+                        <li><input type="checkbox" id="price"><label for="price">₹ 1000 To ₹ 1499 (15)</label></li>
+                        <li><input type="checkbox" id="price"><label for="price">₹ 1500 To ₹ 1999 (10)</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-footer">
+                <button class="back-filter">SHOW 441 RESULTS</button>
+            </div>
         </div>
+        <div class="sort-box-one">
+            <div class="sort-box-one-1">
+                <div class="sort-header">
+                    <h6>Sort by</h6>
+                    <button class="close-sort"><img src="images/cake/close.png" alt=""></button>
+                </div>
+                <ul>
+                    <li class="active"><span></span> Recommended</li>
+                    <li><span></span> New</li>
+                    <li><span></span> Price Low to High</li>
+                    <li><span></span> Price High to Low</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="filter-box">
+            <li><button><img src="images/cake/sort.png" alt="">Sort By</button></li>
+            <li><button><img src="images/cake/sort.png" alt="">Filter</button></li>
+        </ul>
     </div>
 
-    <div class="text-us-bar d-lg-none dis-mobile">
-        <span class="text-us tex-bor">
-            <a href="index.html" class="mx-3 tst"><i class="fa-home fas"></i>
-                <p>Home</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="categories.html" class="mx-1 tst"><i class="fa-list fas"></i>
-                <p>Categories</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="app.html" class="mx-3 tst"><i class="fa-layer-group fas"></i>
-                <p>Apps</p>
-            </a>
-        </span>
-        <span class="text-us tex-bor tst">
-            <a href="orders.html" class="mx-3 tst"><i class="fa-shopping-cart fas"></i>
-                <p>Orders</p>
-            </a>
-        </span>
-        <span class="text-us tst">
-            <a href="contact-us.html" class="mx-2 tst"><i class="fa-user-plus fas"></i>
-                <p>Contact</p>
-            </a>
-        </span>
-        <style>
-            .tst {
-                display: flex;
-                flex-direction: column;
-            }
 
-            .dis-mobile {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 1px;
-            }
-
-            .a tst p {
-                color: #000 !important;
-            }
-        </style>
-    </div>
     <!-- jQuery and Owl Carousel Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Custom JS for Carousel -->
@@ -2096,6 +1660,27 @@
     </script>
     <script>
         $(document).ready(function () {
+            $(".filter-box li button:contains('Filter')").click(function () {
+                $(".filter-box-one").addClass("active");
+                $(".cat-filter-section-mobile").addClass("active");
+            });
+            $(".filter-box li button:contains('Sort By')").click(function () {
+                $(".sort-box-one").addClass("active");
+                $(".cat-filter-section-mobile").addClass("active");
+            });
+            $(".back-filter").click(function () {
+                $(".filter-box-one").removeClass("active");
+                $(".cat-filter-section-mobile").removeClass("active");
+            });
+            $(".close-sort").click(function () {
+                $(".sort-box-one").removeClass("active");
+                $(".cat-filter-section-mobile").removeClass("active");
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
             // Open menu on bar-btn click
             $('.bar-btn').click(function () {
                 $('.mobile-menu').addClass('active');
@@ -2105,22 +1690,11 @@
             $('.close-menu, .mobile-menu-head button').click(function () {
                 $('.mobile-menu').removeClass('active');
             });
-        });
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".cart-icon").mouseenter(function () {
-                $(".web-cart").addClass("active");
+            $('.search_icon_mobile').click(function () {
+                $('.search-modal-right').addClass('active');
             });
-            $('.cart_close').click(function () {
-                $(".web-cart").removeClass("active");
-            });
-            $("#select_location_btn").click(function () {
-                $(".location_bottom_sheet").addClass("active");
-            });
-            $('.close_btn_b').click(function () {
-                $(".location_bottom_sheet").removeClass("active");
+            $('.close_btn_search').click(function () {
+                $('.search-modal-right').removeClass('active');
             });
         });
 
